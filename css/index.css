@@ -109,29 +109,13 @@ body{
     display: block;
 }
 
-/* card scroll*/
-.nav-link{
-color: #ddd;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #212529;
-    background-color: #D5CFCF;
-}
-.scrollspy-example {
-    position: relative;
-    max-height: 100vh;
-    overflow-y: scroll;
-    background-color: #eeeded;
-    color: #212529;
-    top: 0;
-} 
-
 
 
 /* card path */
 .breadcrumb-item a{
     color: #646566;
     text-decoration: none;
+    font-size: 1px;
 }
 .breadcrumb-item.active {
     color: #646566;
@@ -142,15 +126,7 @@ color: #ddd;
 }
 /* 
 scroll fixed */
-#navbar-example2.sticky {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-}
-.navbarOffsetMargin {
-    padding-top: 45px;
-}
+
 /* car content */
 .scrollspy-example h4{
     text-align: center;
