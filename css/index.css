@@ -115,14 +115,14 @@ body{
 .breadcrumb-item a{
     color: #646566;
     text-decoration: none;
-    font-size: 1px;
+    font-size: 14px;
 }
 .breadcrumb-item.active {
     color: #646566;
 }
 .breadcrumb{
     background-color: #eeeded;
-    line-height: 30px;
+    margin-bottom: 20px;
 }
 /* 
 scroll fixed */
