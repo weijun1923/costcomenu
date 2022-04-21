@@ -25,7 +25,7 @@
                 <li class="nav-item border-bottom">
                     <a class="nav-link active " aria-current="page" href="../../index.html">首頁</a>
                 </li>
-                <li class="nav-item border-bottom">
+                <!-- <li class="nav-item border-bottom">
                     <a class="nav-link " href="../../video3C.html">影音、電視、手機、電子周邊</a>
                 </li>
                 <li class="nav-item border-bottom">
@@ -36,11 +36,11 @@
                 </li>
                 <li class="nav-item border-bottom">
                     <a class="nav-link" href="#">保健、美容</a>
-                </li>
+                </li> -->
                 <li class="nav-item border-bottom">
                     <a class="nav-link" href="#">食品</a>
                 </li>
-                <li class="nav-item border-bottom">
+                <!-- <li class="nav-item border-bottom">
                     <a class="nav-link" href="#">清潔日用、寵物</a>
                 </li>
                 <li class="nav-item border-bottom">
@@ -72,7 +72,7 @@
                 </li>
                 <li class="nav-item border-bottom">
                     <a class="nav-link" href="#">珠寶、手錶、眼鏡</a>
-                </li>
+                </li> -->
                 
             </ul>
             </div>
@@ -198,9 +198,32 @@
         </div>
      -->
     </div>
-    <div class="float" >
-        <a href="#toplogo"><i class="fa-solid fa-circle-up"></i></a>
-    </div>
+</div>
+        <div class="float" >
+            <button class="js-back-to-top " title="回到頂部"><i class="fa-solid fa-circle-up"></i></button>
+        </div>
+        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var $win = $(window);
+                var $backToTop = $('.js-back-to-top');
+                // 当用户滚动到离顶部100像素时，展示回到顶部按钮
+                $win.scroll(function() {
+                if ($win.scrollTop() > 100) {
+                    $backToTop.show();
+                } else {
+                    $backToTop.hide();
+                }
+                });
+                // 当用户点击按钮时，通过动画效果返回头部
+                $backToTop.click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 200);
+                });
+            });
+        </script>
+        
         
                 
         <!-- Optional JavaScript; choose one of the two! -->
