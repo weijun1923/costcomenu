@@ -172,3 +172,9 @@ scroll fixed */
 .card{
     height:auto;
 }
+/* 回到上一頁 */
+.bakepage{
+    color: #ddd;
+    font-size: 40px;
+}
+
