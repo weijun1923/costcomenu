@@ -1,3 +1,6 @@
+/* 導覽列 */
+
+
 /* 卡片內容 */
 .money{
 color: brown;
@@ -113,6 +116,7 @@ display: flex;
     display: flex;
     align-items: center;
     z-index: 999999;
+    margin: 0 20px;
     }
     /* 購物車清單位置 */
 .slide_toggle + div {
