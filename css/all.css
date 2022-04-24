@@ -1,0 +1,155 @@
+/* 卡片內容 */
+.money{
+color: brown;
+font-size: 15px;
+}
+.card-body h4{
+    font-size: 15px;
+}
+.card-body a{
+    color: black;
+    text-decoration: none;
+    background-color: rgba(241, 37, 125, 0.861);
+    padding: 10px;
+    border-radius: 10px;
+}
+.card{
+    position: relative;
+    margin-top: 80px;
+}
+/* 購物車買進圖示 */
+.add-to-cart{
+    position: absolute;
+    top: -20px;
+    right: -5px;
+}
+.add-to-cart img{
+    height: 40px;
+    width: 40px;
+}
+/* 卡片標題 */
+.title{
+    font-size: 26px;
+   display: inline-block;
+   margin-top: 80px;
+}
+
+/* 購物車 */
+.cart-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #474440;
+    padding: 10px;
+    color: white;
+    
+}
+.cart-footer{
+    text-align: center;
+}
+.cart-footer  .subtotal{
+background-color: #6a655f;
+height: auto;
+width: 100%;
+color: aliceblue;
+}
+.cart-footer  .checkout{
+background-color: #474440;
+height: auto;
+
+width: 100%;
+}
+.cart-item{
+    justify-content: space-around;
+    background-color: #b7b4b2;
+    margin: 5px 0 0 0;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    color: rgb(10, 10, 10);
+    
+
+}
+.cart-items{
+    overflow-y: auto;
+    max-height: calc(100vh - 247px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* max-height:100vh; */
+}
+
+.cart-item img{
+    width: 100%;
+}
+.units{
+display: flex;
+}
+.item-info{
+    max-width:100px;  
+    word-wrap:break-word;
+}
+.item-info h4{
+    font-size: 10px;
+}
+.number{
+    padding: 5px 10px;
+}
+.btn{
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+/* 購物車收合效果 */
+
+/* 展開收合效果 */
+.slide_toggle {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* 收合提示字串區塊, 還可加入自訂 CSS 效果 */
+    /* 購物車清單圖示位置 */
+    position: fixed;
+    top: 5px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    z-index: 999999;
+    }
+    /* 購物車清單位置 */
+.slide_toggle + div {
+    display: none;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 100%;
+}
+    /* 隱藏註解文字區塊, 請加入自訂 CSS 效果 */
+    /* 購物車清單圖示 */
+.shopping-bag i {
+       font-size: 32px;
+       color: rgb(242, 248, 253);
+    }
+.shopping-bag .total-items-in-cart {
+        margin-left: 10px;
+        padding: 5px;
+        background-color: rgb(242, 248, 253);
+        border-radius: 20px;
+      }
+
+.shopping-bag{
+    display: flex;
+}
+.shopping-bag span{
+    padding:5px;
+    color: rgb(242, 248, 253);
+}
+/* 複製貼上 */
+.checkout a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(187, 193, 191);
+    padding: 10px;
+    border-radius: 10%;
+}
+.checkout{
+    padding: 10px;
+}
