@@ -84,7 +84,7 @@ width: 100%;
 }
 .cart-item{
     justify-content: space-around;
-    background-color: #b7b4b2;
+    background-color: white;
     display: flex;
     text-align: center;
     padding-top: 10px;
