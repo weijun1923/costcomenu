@@ -35,7 +35,19 @@ font-size: 15px;
     font-size: 26px;
    display: inline-block;
    margin-top: 80px;
+   text-align: center;
+   background-color: #6a655f;
+   color: aliceblue;
 }
+.smtitle{
+    font-size: 26px;
+   display: inline-block;
+   margin-top: 80px;
+   text-align: center;
+   background-color: #7cf8e9;
+   color: rgb(4, 4, 4);
+}
+
 
 /* 購物車 */
 .cart-header{
@@ -56,20 +68,29 @@ width: 100%;
 color: aliceblue;
 }
 .cart-footer  .checkout{
-background-color: #474440;
+background-color: #6a655f;
 height: auto;
-
 width: 100%;
+}
+.cart-footer .phone{
+    background-color: #464443;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    color: aliceblue;
+}
+.phone input{
+    height: 30px;
 }
 .cart-item{
     justify-content: space-around;
     background-color: #b7b4b2;
-    margin: 5px 0 0 0;
     display: flex;
     text-align: center;
     padding-top: 10px;
     align-items: center;
     color: rgb(10, 10, 10);
+    border-bottom: 2px #474440 solid;
     
 
 }
@@ -135,7 +156,7 @@ display: flex;
 .shopping-bag .total-items-in-cart {
         margin-left: 10px;
         padding: 5px;
-        background-color: rgb(242, 248, 253);
+        background-color: #F3CD05;
         border-radius: 20px;
       }
 
@@ -156,4 +177,72 @@ display: flex;
 }
 .checkout{
     padding: 10px;
+}
+/* 滾動選單 */
+.scorll-wapper{
+    max-height: 110px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #212529;
+}
+.scorll-wapper::-webkit-scrollbar{
+    height: 10px;
+    -webkit-appearance: none;
+}
+.scorll-wapper::-webkit-scrollbar-track{
+    background-color: #212529;
+    border-radius: 20px;
+}
+.scorll-wapper::-webkit-scrollbar-thumb{
+    background-color: rgb(221, 243, 235);
+    border-radius: 20px;
+    
+}
+.scorll-wapper::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+.scorll-wapper::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+
+.scorll-wapper .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 90px;
+    text-align: center;
+    background-color: #212529;
+    margin-right: 2px;
+    margin-top: 5px;
+    padding: 15px;
+}
+.scrollnav{
+    padding: 0;
+}
+
+
+
+/* 滾動選單icon */
+.navicon{
+    color: #ddd;
+    font-size: 50px;
+    line-height: 40px;
+    
+
+}
+
+.navicon a{
+    color: #ddd;
+}
+.navicon span{
+    padding-top: 10px;
+    font-size: 12px;
+    display: block;
+}
+.item a:hover{
+    background-color: rgb(144, 145, 145);
+}
+.item a{
+    margin: 0 20px;
 }

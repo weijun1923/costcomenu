@@ -1,5 +1,5 @@
 /* app.js */
-const productsE1 = document.querySelector(".row");
+const productsE1 = document.querySelector(".render1");
 const cartItemE1 = document.querySelector(".cart-items");
 const subtotalE1 = document.querySelector(".subtotal");
 const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
@@ -25,6 +25,8 @@ function renderProdcuts(){
 }
 
 renderProdcuts();
+
+
 // 購物車陣列
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
 updateCart();
@@ -46,6 +48,7 @@ function addToCart(id) {
     updateCart();
 
 }
+
 
 // 更新購物清單
 function  updateCart(){

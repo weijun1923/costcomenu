@@ -35,11 +35,35 @@
     </header>
 <!-- 商品清單 -->
     <div class="container-fluid">
-        <div class="row">
+        <div class="row render1">
+            <span class="title">居家生活</span>
+            <!-- 滾動選單 -->
+            <nav class="scrollnav">
+                <div class="scorll-wapper">
+                    <div class="item" >
+                        <a href="#FeminineCareProducts">
+                            <i class="fa-solid fa-venus navicon" >
+                                <span>女性護理用品</span>
+                            </i>
+                        </a>
+                        <a href="#bodycleaningproducts">
+                            <i class="fa-solid fa-shower navicon" >
+                                <span>身體清潔用品</span>
+                            </i>
+                        </a>
+                        <a href="#Cupandbottleutensils">
+                            <i class="fa-solid fa-glass-water navicon" >
+                                <span>杯瓶器皿</span>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <span class="smtitle" id="FeminineCareProducts">女性護理用品</span>
             <!-- 選染商品項目  -->
              <div class="col-6 text-center ">
                 <div class="card h-100 " >
-                    <img src="img/126979-01.jpg"class="card-img-top w-100">
+                    <img src="img\homelife\FeminineCareProducts\115671-01.jpg"class="card-img-top w-100">
                     <div class="card-body">
                         <h4 class="card-text">Kirkland Signature 科克蘭 鹽烤夏威夷果仁 680公克</h4>
                         <p class="money">$669</p>
@@ -54,13 +78,21 @@
         </div>
     </div> 
 
-   
+   <div class="container-fluid">
+       <div class="row render2">
+        <span class="smtitle" id="bodycleaningproducts">身體清潔用品</span>
+       </div>
+   </div>
+   <div class="container-fluid">
+    <div class="row render3">
+     <span class="smtitle" id="Cupandbottleutensils">杯瓶器皿</span>
+    </div>
+</div>
 <!-- 購物車清單 -->
 
 <div class="slide_toggle">
     <div class="shopping-bag">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <span>購物車</span> 
+            <i class="fa-solid fa-cart-shopping"></i>
             <div class="total-items-in-cart">
             0
             </div>
@@ -96,6 +128,19 @@
                     <div class="cart-footer">
                         <div class="subtotal">
                             Subtotal (0 items): $0
+                        </div>
+                        <div class="phone ">
+                            電話:<input type="tel" name="tel" placeholder="請輸入手機..." />
+                            <select>
+                                <option>請選擇您要領貨的時間</option>
+                                <option>禮拜一19:00~20:00領貨</option>
+                                <option>禮拜三19:00~20:00領貨</option>
+                                <option>禮拜五19:00~20:00領貨</option>
+                            </select>
+                            <select>
+                                <option>請選擇您要領貨的地點</option>
+                                <option>東勢麥當勞停車場</option>
+                            </select>
                         </div>
                         <div class="checkout" >
                             <a href="javascript:void(0)" onclick="CopyTextToClipboard('copythis')">
