@@ -68,9 +68,7 @@
                         <h4 class="card-text">Kirkland Signature 科克蘭 鹽烤夏威夷果仁 680公克</h4>
                         <p class="money">$669</p>
                         <a href="#">詳細內容</a>
-                    </div>
-                    <div class="add-to-cart">
-                        <img src="img/bag-plus.png" alt="add to cart">
+                        <a href="#"class="add-to-cart">加入購物車</a>
                     </div>
                 </div>
             </div> 
@@ -99,21 +97,24 @@
     </div>
 </div>
 <div>
-    <div class="container-fluid" id="copythis">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-12">
                 <div class="cart">
                     <div class="cart-header">
-                        <div class="column1">商品</div>
+                        <div class="column1">商品
+                        </div>
                         <div class="column2">價格</div>
                         <div class="column3">數量</div>
                     </div>
+                    <div class="copycart" id="copythis">
                     <div class="cart-items">
                         <!-- 渲染購物車項目 -->
                         <div class="cart-item">
                             <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                                <img src="img/126979-01.jpg">
+                                <img src="img/126979-01.jpg" >
                                 <h4>Kirkland Signature 科克蘭 鹽烤夏威夷果仁 680公克</h4>
+                                <img src="img/x-button.png" alt="" class="xbutton">
                             </div>
                             <div class="unit-price">
                                 <small>$</small>669
@@ -130,18 +131,8 @@
                             Subtotal (0 items): $0
                         </div>
                         <div class="phone ">
-                            電話:<input type="tel" name="tel" placeholder="請輸入手機..." id="copythis"/>
-                            <select id="copythis">
-                                <option>請選擇您要領貨的時間</option>
-                                <option>禮拜一19:00~20:00領貨</option>
-                                <option>禮拜三19:00~20:00領貨</option>
-                                <option>禮拜五19:00~20:00領貨</option>
-                                <option>測試</option>
-                            </select>
-                            <select id="copythis">
-                                <option>請選擇您要領貨的地點</option>
-                                <option>東勢麥當勞停車場</option>
-                            </select>
+                            <div class="phonetel">電話:<span id="inputTel"></span></div>
+                            <p id="reanderlocal"></p>
                         </div>
                         <div class="checkout" >
                             <a href="javascript:void(0)" onclick="CopyTextToClipboard('copythis')">
@@ -150,11 +141,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="inputel ">
+                    手機:<input type="text" id="domTextElement" placeholder="輸入手機號碼"> 
+                    <select id="local"  onchange="print_value();">
+                        <option>請選擇您要領貨的地點</option>
+                        <option>東勢麥當勞停車場</option>
+                    </select>
+                    <button type="button"  onclick="getValueInput()"> 
+                        確認後送出 
+                    </button> 
+                </div>
+                </div>
             </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 
@@ -194,6 +198,23 @@
 
         }
     </script>
+    <script> 
+
+        const getValueInput = () =>{
+          let inputValue = document.getElementById("domTextElement").value;
+          document.getElementById("inputTel").innerHTML = inputValue; 
+          alert("已將手機以及取貨地點寫入訂單");
+        }
+        
+      </script> 
+      <script>
+          function print_value() {
+              <!-- 將 select 的值在印出 -->
+              document.getElementById("reanderlocal").innerHTML = document.getElementById("local").value
+          }
+      </script>
+      
+      
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

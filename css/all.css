@@ -9,26 +9,33 @@ font-size: 15px;
 .card-body h4{
     font-size: 15px;
 }
-.card-body a{
+.card a{
     color: black;
     text-decoration: none;
     background-color: rgba(241, 37, 125, 0.861);
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 15px;
+
+   
 }
 .card{
     position: relative;
     margin-top: 80px;
 }
 /* 購物車買進圖示 */
-.add-to-cart{
-    position: absolute;
-    top: -20px;
-    right: -5px;
-}
-.add-to-cart img{
-    height: 40px;
-    width: 40px;
+
+.add-to-cart button{
+    background-color: rgba(241, 37, 125, 0.861);
+    border: none;
+    border-radius: 10px;
+    padding:8px;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 /* 卡片標題 */
 .title{
@@ -53,7 +60,7 @@ font-size: 15px;
 .cart-header{
     display: flex;
     justify-content: space-around;
-    background-color: #474440;
+    background-color: #6a655f;
     padding: 10px;
     color: white;
     
@@ -76,33 +83,32 @@ width: 100%;
     background-color: #464443;
     width: 100%;
     display: inline-block;
-    height: auto;
-    color: aliceblue;
+    height: 120px;
+    color: #464443;
+    position: relative;
 }
-.phone input{
-    height: 30px;
-}
+
 .cart-item{
     justify-content: space-around;
-    background-color: white;
+    background-color: #464443;
     display: flex;
     text-align: center;
     padding-top: 10px;
     align-items: center;
-    color: rgb(10, 10, 10);
-    border-bottom: 2px #474440 solid;
+    color: #ddd;
+    border-bottom: 1px #ddd solid;
     
 
 }
 .cart-items{
     overflow-y: auto;
-    max-height: calc(100vh - 247px);
+    max-height: calc(100vh - 350px);
     overflow-y: auto;
     overflow-x: hidden;
     /* max-height:100vh; */
 }
 
-.cart-item img{
+.item-info img{
     width: 100%;
 }
 .units{
@@ -111,9 +117,17 @@ display: flex;
 .item-info{
     max-width:100px;  
     word-wrap:break-word;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.xbutton{
+    width: 20px!important;
+    height: 20px!important;
 }
 .item-info h4{
     font-size: 10px;
+    color: #212529;
 }
 .number{
     padding: 5px 10px;
@@ -121,6 +135,13 @@ display: flex;
 .btn{
     background-color: aliceblue;
     border-radius: 100%;
+}
+.inputel{
+    position: absolute;
+    color: #ddd;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 44px;
 }
 /* 購物車收合效果 */
 
@@ -179,12 +200,17 @@ display: flex;
     padding: 10px;
 }
 /* 滾動選單 */
+.scrollnav{
+    background-color:#212529 ;
+}
 .scorll-wapper{
-    max-height: 110px;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background-color: #212529;
+overflow-x: auto;
+overflow-y: auto;
+overflow-y: hidden;
+overflow-x: hidden;
+white-space: nowrap;
+-webkit-overflow-scrolling:touch; 
+background-color: #212529;
 }
 .scorll-wapper::-webkit-scrollbar{
     height: 10px;
@@ -216,9 +242,6 @@ display: flex;
     margin-right: 2px;
     margin-top: 5px;
     padding: 15px;
-}
-.scrollnav{
-    padding: 0;
 }
 
 

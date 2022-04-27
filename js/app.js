@@ -15,9 +15,10 @@ function renderProdcuts(){
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <a href="${product.href}">詳細內容</a>
+                
             </div>
             <div class="add-to-cart" onclick="addToCart(${product.id})">
-                <img src="img/bag-plus.png" alt="add to cart">
+            <button type="button">加入購物車</button>
             </div>
         </div>
     </div>`;
@@ -79,6 +80,7 @@ function renderCartItems(){
         <div class="item-info" onclick="removeItemFromCart(${item.id})">
             <img src="${item.imgSrc}">
             <h4>${item.name}</h4>
+            <img src="img/x-button.png" alt="" class="xbutton">
         </div>
         <div class="unit-price">
             <small>$</small>${item.price}
