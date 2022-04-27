@@ -7,17 +7,17 @@ const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 function renderProdcuts(){
     products.forEach( (product) => {
         productsE1.innerHTML +=`
-        
-        <div class="col-6 text-center mt-2">
-        <div class="card h-100 " >
-            <img src="${product.imgSrc}"class="card-img-top w-100">
+        <div class="col-6 text-center mt-2 p-1">
+        <div class="card h-100 shadow bg-white rounded" >
+            <img src="${product.imgSrc}"class="card-img-top w-100 ">
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
-                <a href="${product.href}">詳細內容</a>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+                
             </div>
             <div class="add-to-cart" onclick="addToCart(${product.id})">
-                <img src="img/bag-plus.png" alt="add to cart">
+            <button type="button" class="bottonshadow">加入購物車</button>
             </div>
         </div>
     </div>`;
@@ -79,6 +79,7 @@ function renderCartItems(){
         <div class="item-info" onclick="removeItemFromCart(${item.id})">
             <img src="${item.imgSrc}">
             <h4>${item.name}</h4>
+            <img src="img/x-button.png" alt="" class="xbutton">
         </div>
         <div class="unit-price">
             <small>$</small>${item.price}
