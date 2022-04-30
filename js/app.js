@@ -1,15 +1,43 @@
 /* app.js */
 const productsE1 = document.querySelector(".render1");
+const productsE2 = document.querySelector(".render2");
+const productsE3 = document.querySelector(".render3");
+const productsE4 = document.querySelector(".render4");
+const productsE5 = document.querySelector(".render5");
+const productsE6 = document.querySelector(".render6");
+const productsE7 = document.querySelector(".render7");
+const productsE8 = document.querySelector(".render8");
+const productsE9 = document.querySelector(".render9");
 const cartItemE1 = document.querySelector(".cart-items");
 const subtotalE1 = document.querySelector(".subtotal");
 const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 //渲染產品 
 function renderProdcuts(){
-    products.forEach( (product) => {
+    products.slice(0,3).forEach( (product) => {
         productsE1.innerHTML +=`
         <div class="col-6 text-center  m-0 p-0">
         <div class="card h-100" >
+            <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow"> 加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(3,17).forEach( (product) => {
+        productsE2.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
@@ -21,6 +49,133 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
+    products.slice(17,19).forEach( (product) => {
+        productsE3.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(19,36).forEach( (product) => {
+        productsE4.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(36,38).forEach( (product) => {
+        productsE5.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(38,39).forEach( (product) => {
+        productsE6.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(39,40).forEach( (product) => {
+        productsE7.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(40,41).forEach( (product) => {
+        productsE8.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    products.slice(41,54).forEach( (product) => {
+        productsE9.innerHTML +=`
+        <div class="col-6 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <img src="${product.imgSrc}"class="card-img-top ">
+            </div>
+            <div class="card-body">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+   
 }
 
 renderProdcuts();
@@ -75,18 +230,25 @@ function renderCartItems(){
     cart.forEach((item) => {
         cartItemE1.innerHTML +=`
         <div class="cart-item">
-        <div class="item-info" onclick="removeItemFromCart(${item.id})">
-            <img src="${item.imgSrc}">
+        <div class="removeitem" >
+            <i class="fa-solid fa-trash" onclick="removeItemFromCart(${item.id})"></i>
+        </div>
+
+        <div class="item-info">
+            <img src="${item.imgSrc}" alt="${item.name}">
+        </div>
+
+        <div class="rightitem">
             <h4>${item.name}</h4>
-            <img src="img/x-button.png" alt="" class="xbutton">
-        </div>
-        <div class="unit-price">
-            <small>$</small>${item.price}
-        </div>
-        <div class="units">
-            <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})"><i class="fa-solid fa-minus"></i></div>
-            <div class="number">數量${item.numberOfUnits}</div>
-            <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})"><i class="fa-solid fa-plus"></i></div>           
+            <div class="unit-price">
+                <small>$</small>${item.price}
+            </div>
+            <div class="units">
+                目前數量:
+                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                <div class="number">${item.numberOfUnits}</div>
+                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
+            </div>
         </div>
     </div>`;
     });

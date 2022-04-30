@@ -1,9 +1,32 @@
-a{
-    background-color: blue;
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    display: block;
+.container input{
+    background-color: rgb(253, 253, 254);
+    color: rgb(0, 0, 0);
     margin: 0 auto;
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 100%;
     
 }
+body{
+    background-image:url(../img/indexbackgroumd.jpg);
+}
+.container{
+    color: aliceblue;
+}
+img{
+    display: block;
+}
+.imgwapper{
+    margin: 10px;
+}
+.imgwapper p{
+    line-height: 20px;
+    margin-top: 20px;
+}
+.container h3{
+    line-height: 100px;
+}
+
+
