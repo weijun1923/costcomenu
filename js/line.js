@@ -11,7 +11,7 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = document.getElementById('message').value;
+          let message = document.getElementById('message');
           liff.sendMessages([
             {
               type: 'text',
