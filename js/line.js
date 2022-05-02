@@ -23,7 +23,6 @@ window.addEventListener('load', () => {
 
 var liffID = '1657102852-g5rdq53W';
 triggerLIFF();
-var messagetext =$("#message").val();
 
 
 function triggerLIFF() {
@@ -32,7 +31,7 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = messagetext;
+          let message = document.getElementById('message');
           liff.sendMessages([
             {
               type: 'text',

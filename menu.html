@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="inputel ">
-                    手機:<input type="text" id="domTextElement" placeholder="輸入手機號碼">
+                    手機:<input type="text" id="message" placeholder="輸入手機號碼">
                     <select id="local" onchange="print_value();">
                         <option>請選擇您要領貨的地點</option>
                         <option>東勢麥當勞停車場</option>
@@ -206,7 +206,7 @@
             </div>
         </div>
     </div>
-    <textarea name="message" rows="100" cols="100" id="message" type="text"></textarea>
+    <textarea name="message" rows="100" cols="100" id="message" type="text" class="messagestyle"></textarea>
    
 
 
@@ -225,7 +225,7 @@
 
             const getValueInput = () => {
                 let inputValue = document.getElementById("domTextElement").value;
-                document.getElementById("inputTel").innerHTML = inputValue;
+                document.getElementById("message").innerHTML = inputValue;
 
             }
 
@@ -233,7 +233,7 @@
         <script>
             function print_value() {
             //   < !--將 select 的值在印出-- >
-                    document.getElementById("reanderlocal").innerHTML = document.getElementById("local").value
+                    document.getElementById("message").innerHTML = document.getElementById("local").value
             }
         </script>
 

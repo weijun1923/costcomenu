@@ -184,7 +184,9 @@ font-size: 20px;
 .checkout{
     padding: 10px;
 }
-
+.messagestyle{
+    display:none;
+}
 
 /* 滾動選單 */
 .scrollnav{
