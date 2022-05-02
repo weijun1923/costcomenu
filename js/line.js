@@ -3,9 +3,7 @@ window.addEventListener('load', () => {
 var liffID = '1657102852-g5rdq53W';
 triggerLIFF();
 
-document.addEventListener("copy", () => {
-  let text = window.getSelection().toString();
-});
+
 
 function triggerLIFF() {
     liff.init({
@@ -13,7 +11,7 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = text;
+          let message = document.getElementById('message').value;
           liff.sendMessages([
             {
               type: 'text',
