@@ -245,9 +245,13 @@ function renderCartItems(){
             </div>
             <div class="units">
                 數量:
-                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">
+                <img src="img/minus.png" alt="">
+                </div>
                 <div class="number">${item.numberOfUnits}</div>
-                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
+                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">
+                <img src="img/add.png" alt="">
+                </div>           
             </div>
         </div>
     </div>`;
