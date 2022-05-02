@@ -206,7 +206,7 @@
             </div>
         </div>
     </div>
-    <textarea name="textarea" rows="100" cols="100" id="message" type="text"></textarea>
+    <textarea name="message" rows="100" cols="100" id="message" type="text"></textarea>
    
 
 
@@ -214,34 +214,13 @@
 
 
         <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-        <script src="js/line.js"></script>
         <script src="js/products.js"> </script>
         <script src="js/app.js"></script>
+        <script src="js/line.js"></script>
         <!--  line-->
 
 
-        <!-- 複製購物清單 -->
-        <script>
-            function CopyTextToClipboard(id) {
-
-                var TextRange = document.createRange();
-
-                TextRange.selectNode(document.getElementById(id));
-
-                sel = window.getSelection();
-
-                sel.removeAllRanges();
-
-                sel.addRange(TextRange);
-
-                document.execCommand("copy");
-                // 貼上輸入框
-                const pasteText = document.querySelector('#message');
-                pasteText.focus();
-                document.execCommand('paste');
-
-            }
-        </script>
+        
         <script>
 
             const getValueInput = () => {
