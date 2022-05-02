@@ -235,7 +235,7 @@ function renderCartItems(){
         </div>
 
         <div class="item-info">
-            <img src="${item.imgSrc}" alt="${item.name}">
+            <img src="${item.imgSrc}" alt="商品編號:${item.id}">
         </div>
 
         <div class="rightitem">
@@ -244,7 +244,7 @@ function renderCartItems(){
                 <small>$</small>${item.price}
             </div>
             <div class="units">
-                目前數量:
+                數量:
                 <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
                 <div class="number">${item.numberOfUnits}</div>
                 <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
