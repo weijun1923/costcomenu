@@ -238,9 +238,7 @@
                 sel.addRange(TextRange);
 
                 document.execCommand("copy");
-
-                alert("已經訂單複製，請貼到line聊天視窗中，才正式完成訂單喔!")
-                  //此行可加可不加
+                // 貼上輸入框
                 const pasteText = document.querySelector('#message');
                 pasteText.focus();
                 document.execCommand('paste');
