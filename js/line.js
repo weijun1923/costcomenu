@@ -1,23 +1,24 @@
 // <!-- 複製購物清單 -->
-
 function CopyTextToClipboard(id) {
 
-  var TextRange = document.createRange();
+var TextRange = document.createRange();
 
-  TextRange.selectNode(document.getElementById(id));
+TextRange.selectNode(document.getElementById(id));
 
-  sel = window.getSelection();
+sel = window.getSelection();
 
-  sel.removeAllRanges();
+sel.removeAllRanges();
 
-  sel.addRange(TextRange);
+sel.addRange(TextRange);
 
-  document.execCommand("copy");
-  // 貼上輸入框
-  const pasteText = document.querySelector('#message');
-  pasteText.focus();
-  document.execCommand('paste');
+document.execCommand("copy");
+// 貼上輸入框
+const pasteText = document.querySelector('#message').value;
+pasteText.focus();
+document.execCommand('paste');
+
 }
+
 
 window.addEventListener('load', () => {
 
@@ -31,7 +32,7 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = document.getElementById('message');
+          let message = document.getElementById('message').value;
           liff.sendMessages([
             {
               type: 'text',

@@ -188,16 +188,14 @@
                         </div>
                         <div class="checkout">
                            
-                            <button id="sendMessage">
-                                <a href="javascript:void(0)" onclick="CopyTextToClipboard('copythis')">
-                                傳送訊息
+                                <a href="javascript:void(0)" onclick="getValueInput();CopyTextToClipboard('copythis');" id="sendMessage">
+                                    <i class="fas fa-clipboard"></i>確認後送出
                                 </a>
-                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="inputel ">
-                    手機:<input type="text" placeholder="輸入手機號碼">
+                    手機:<input type="text" placeholder="輸入手機號碼" id="domTextElement">
                     <select id="local" onchange="print_value();">
                         <option>請選擇您要領貨的地點</option>
                         <option>東勢麥當勞停車場</option>
@@ -218,22 +216,22 @@
         <script src="js/app.js"></script>
         <script src="js/line.js"></script>
         <!--  line-->
+        <script> 
 
-
-        
-        <script>
-
-            const getValueInput = () => {
-                let inputValue = document.getElementById("domTextElement").value;
-                document.getElementById("message").innerHTML = inputValue;
-
+            const getValueInput = () =>{
+              let inputValue = document.getElementById("domTextElement").value;
+              document.getElementById("inputTel").innerHTML = inputValue; 
+              
             }
-
-        </script>
+            
+          </script> 
+       
+        
         <script>
             function print_value() {
             //   < !--將 select 的值在印出-- >
-                    document.getElementById("message").innerHTML = document.getElementById("local").value
+                    document.getElementById("reanderlocal").innerHTML = document.getElementById("local").value;
+
             }
         </script>
 

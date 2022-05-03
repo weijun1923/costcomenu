@@ -185,7 +185,12 @@ font-size: 20px;
     padding: 10px;
 }
 .messagestyle{
-    display:none;
+    opacity:0;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;        
 }
 
 /* 滾動選單 */
