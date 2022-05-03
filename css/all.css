@@ -184,14 +184,14 @@ font-size: 20px;
 .checkout{
     padding: 10px;
 }
-.messagestyle{
+/* .messagestyle{
     opacity:0;
     -webkit-transition: 200ms;
     -moz-transition: 200ms;
     -ms-transition: 200ms;
     -o-transition: 200ms;
     transition: 200ms;        
-}
+} */
 
 /* 滾動選單 */
 .scrollnav{

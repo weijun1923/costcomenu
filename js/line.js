@@ -12,10 +12,17 @@ sel.removeAllRanges();
 sel.addRange(TextRange);
 
 document.execCommand("copy");
-// 貼上輸入框
-const pasteText = document.querySelector('#message').value;
-pasteText.focus();
-document.execCommand('paste');
+
+editor.addEventListener("paste", function(e) {
+  // cancel paste
+  e.preventDefault();
+
+  // get text representation of clipboard
+  var text = (e.originalEvent || e).clipboardData.getData('text/plain');
+
+  // insert text manually
+  document.execCommand("insertHTML", false, text);
+});
 
 }
 
@@ -32,7 +39,7 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = document.getElementById('message').value;
+          let message = text;
           liff.sendMessages([
             {
               type: 'text',
