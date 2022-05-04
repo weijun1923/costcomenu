@@ -74,6 +74,9 @@ font-size: 20px;
 }
 
 /* 購物車 */
+.cart{
+    position: relative;
+}
 .cart-item{
     display: flex;
     justify-content: center;
@@ -99,6 +102,9 @@ font-size: 20px;
 .item-info span{
     word-wrap:break-word;
     display: block;
+}
+.subtotal{
+    margin:20px 0 80px 0;
 }
 /* 購物車清單刪除圖示 */
     .removeitem {
@@ -177,21 +183,23 @@ font-size: 20px;
 .checkout a{
     text-decoration: none;
     color: rgb(245, 245, 245);
-    background-color: #0600c0;
+    background-color: #2888ee;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 .checkout{
+    position: relative;
     padding: 10px;
 }
-/* .messagestyle{
-    opacity:0;
-    -webkit-transition: 200ms;
-    -moz-transition: 200ms;
-    -ms-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms;        
-} */
+.inputel{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 60px;
+}
+.phone{
+    display: none;
+}
 
 /* 滾動選單 */
 .scrollnav{
