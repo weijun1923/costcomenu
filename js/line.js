@@ -1,12 +1,7 @@
 window.addEventListener('load', () => {
   
-  $('a.sendMessage').on('click', function () { 
-    let inputValue = document.getElementById("domTextElement").value;
-    document.getElementById("inputTel").innerHTML = inputValue; 
-    var $partType = $(this).closest('div.cart');
-    var $partText = $partType.find('div.setmessage').text();
-    console.log($partText);
-  });
+
+
 
 var liffID = '1657102852-g5rdq53W';
 triggerLIFF();
@@ -16,7 +11,11 @@ function triggerLIFF() {
     }).then( () => {
       const btnMessage = document.getElementById('sendMessage');
       btnMessage.addEventListener('click', () => {
-        let message = $partText;
+        let inputValue = document.getElementById("domTextElement").value;
+        document.getElementById("inputTel").innerHTML = inputValue; 
+        const text = document.getElementById('setmessage');
+        const message = text.innerText;
+
         liff.sendMessages([
           {
             type: 'text',
