@@ -22,7 +22,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -41,7 +40,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -60,7 +58,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -79,7 +76,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -98,7 +94,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -117,7 +112,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -136,7 +130,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -155,7 +148,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -174,7 +166,6 @@ function renderProdcuts(){
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
-                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -249,6 +240,7 @@ function renderCartItems(){
 
         <div class="rightitem">
             <h4>${item.name}</h4>
+            <p>商品編號:#${item.id}</p>
             <div class="unit-price">
                 <small>$</small>${item.price}
             </div>
