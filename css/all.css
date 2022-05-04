@@ -7,7 +7,7 @@ color: brown;
 font-size: 20px;
 }
 .card-body h4{
-    font-size: 10px;
+    font-size: 16px;
    
 }
 
@@ -71,6 +71,9 @@ font-size: 20px;
    text-align: center;
    background-color: rgb(221, 243, 235);
    color: rgb(4, 4, 4);
+}
+.cardid{
+    font-size: 10px;
 }
 
 /* 購物車 */
@@ -198,7 +201,7 @@ font-size: 20px;
     bottom: 60px;
 }
 .phone{
-    display: none;
+    opacity:0
 }
 
 /* 滾動選單 */

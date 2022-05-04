@@ -15,13 +15,14 @@ const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 function renderProdcuts(){
     products.slice(0,3).forEach( (product) => {
         productsE1.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -33,13 +34,14 @@ function renderProdcuts(){
     })
     products.slice(3,17).forEach( (product) => {
         productsE2.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -51,13 +53,14 @@ function renderProdcuts(){
     })
     products.slice(17,19).forEach( (product) => {
         productsE3.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -69,13 +72,14 @@ function renderProdcuts(){
     })
     products.slice(19,36).forEach( (product) => {
         productsE4.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -87,13 +91,14 @@ function renderProdcuts(){
     })
     products.slice(36,38).forEach( (product) => {
         productsE5.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -105,13 +110,14 @@ function renderProdcuts(){
     })
     products.slice(38,39).forEach( (product) => {
         productsE6.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -123,13 +129,14 @@ function renderProdcuts(){
     })
     products.slice(39,40).forEach( (product) => {
         productsE7.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -141,13 +148,14 @@ function renderProdcuts(){
     })
     products.slice(40,41).forEach( (product) => {
         productsE8.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -159,13 +167,14 @@ function renderProdcuts(){
     })
     products.slice(41,54).forEach( (product) => {
         productsE9.innerHTML +=`
-        <div class="col-6 text-center  m-0 p-0">
+        <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <img src="${product.imgSrc}"class="card-img-top ">
             </div>
             <div class="card-body">
                 <h4 class="card-text">${product.name}</h4>
+                <p class="cardid">商品編號:#${product.id}</p>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
             </div>
@@ -235,7 +244,7 @@ function renderCartItems(){
         </div>
 
         <div class="item-info">
-            <img src="${item.imgSrc}" alt="商品編號:${item.id}">
+            <img src="${item.imgSrc}" alt="${item.name}">
         </div>
 
         <div class="rightitem">
