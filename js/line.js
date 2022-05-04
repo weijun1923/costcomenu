@@ -1,37 +1,16 @@
-// <!-- 複製購物清單 -->
-function CopyTextToClipboard(id) {
-
-var TextRange = document.createRange();
-
-TextRange.selectNode(document.getElementById(id));
-
-sel = window.getSelection();
-
-sel.removeAllRanges();
-
-sel.addRange(TextRange);
-
-document.execCommand("copy");
-
-editor.addEventListener("paste", function(e) {
-  // cancel paste
-  e.preventDefault();
-
-  // get text representation of clipboard
-  var text = (e.originalEvent || e).clipboardData.getData('text/plain');
-
-  // insert text manually
-  document.execCommand("insertHTML", false, text);
-});
-
-}
-
-
 window.addEventListener('load', () => {
+
 
 var liffID = '1657102852-g5rdq53W';
 triggerLIFF();
 
+$('a.sendMessage').on('click', function () { 
+  let inputValue = document.getElementById("domTextElement").value;
+  document.getElementById("inputTel").innerHTML = inputValue; 
+  var $partType = $(this).closest('div.cart');
+  var $partText = $partType.find('div.setmessage').text();
+  console.log($partText);
+});
 
 function triggerLIFF() {
     liff.init({
@@ -39,7 +18,8 @@ function triggerLIFF() {
     }).then( () => {
         const btnMessage = document.getElementById('sendMessage');
         btnMessage.addEventListener('click', () => {
-          let message = text;
+          let message = $partText;
+        
           liff.sendMessages([
             {
               type: 'text',
