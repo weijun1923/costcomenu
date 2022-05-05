@@ -5,7 +5,13 @@
             function goToIndex(){
                 if (window.name == ""){
                     window.name = "loaded";
-                    confirm(window.open('https://liff.line.me/1657109991-YrKkq8KJ'));
+                    Swal.fire({
+                    imageUrl: 'img/index03.jpg',
+                    imageHeight: 1157,
+                    imageWidth: 375,
+                    imageAlt: 'A tall image',
+                    confirmButtonText:"我同意"
+                    })
                 }else{
                     return false;
                 }

@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/all.css">
     <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
 </head>
 
-<body  >
+<body  onload="goToIndex()"  >
     <header id="header">
         <nav class="navbar  navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -207,9 +207,6 @@
         </div>
     </div>
     <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%;" rows="10"></textarea>
-    
-
-
 
         <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
         <script src="js/products.js"> </script>
@@ -222,7 +219,22 @@
 
             }
         </script>
-       
+        <script>
+            function goToIndex(){
+                if (window.name == ""){
+                    window.name = "loaded";
+                    Swal.fire({
+                    imageUrl: 'img/index03.jpg',
+                    imageHeight: 1157,
+                    imageWidth: 375,
+                    imageAlt: 'A tall image',
+                    confirmButtonText:"我同意"
+                    })
+                }else{
+                    return false;
+                }
+            }
+        </script>
         
 
 
