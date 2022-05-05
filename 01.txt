@@ -1,0 +1,21 @@
+ menu
+
+ onload="goToIndex()" 
+ <script>
+            function goToIndex(){
+                if (window.name == ""){
+                    window.name = "loaded";
+                    confirm(window.open('https://liff.line.me/1657109991-YrKkq8KJ'));
+                }else{
+                    return false;
+                }
+            }
+</script>
+
+index 
+
+<script>
+    function wincloes() {
+    setTimeout(window.close,300)
+}
+</script>

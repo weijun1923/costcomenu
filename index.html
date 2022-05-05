@@ -41,7 +41,7 @@
                 </div>
                 
                 
-                  <input type="button"  value="我同意以上規則，進入網站" id="closewindow" onclick=" wincloes()"/>
+                  <input type="button"  value="我同意以上規則，進入網站" id="closewindow" onclick="windowopen()"/>
                 
                 <br>
                 <br>
@@ -49,10 +49,11 @@
                 <br>
                 <br>
                 <script>
-                  function wincloes() {
-                    setTimeout(window.close,300)
+                  function windowopen(){
+                    window.open("https://liff.line.me/1657102852-g5rdq53W");
                   }
                 </script>
+                
                 <script>
                   window.addEventListener('load', () => {
                     triggerLIFF();
@@ -64,7 +65,7 @@
                           console.log('LIFF init');
                           const btnContent = document.getElementById('closewindow');
                           btnContent.addEventListener('click', () => {
-                            liff.closeWindow();
+                            window.open("https://liff.line.me/1657102852-g5rdq53W");
                             console.log(triggerLIFF());
                           });
                           
