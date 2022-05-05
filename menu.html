@@ -16,7 +16,7 @@
     
 </head>
 
-<body>
+<body onload="goToIndex()" >
     <header id="header">
         <nav class="navbar  navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -207,8 +207,7 @@
         </div>
     </div>
     <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%;" rows="10"></textarea>
-
-        
+    
 
 
 
@@ -223,7 +222,16 @@
 
             }
         </script>
-         
+        <script>
+            function goToIndex(){
+                if (window.name == ""){
+                    window.name = "loaded";
+                    confirm(window.open('index.html'));
+                }else{
+                    return false;
+                }
+            }
+        </script>
         
 
 

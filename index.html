@@ -48,23 +48,14 @@
                 <br>
                 <br>
                 <br>
-                
-                
                 <script>
-                  function winopen(){
-                      if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                      2
-                        window.location.href = "https://line.me/R/app/1657102852-g5rdq53W";
-                      3
-                      } else {
-                      4
-                        window.location.href = "https://liff.line.me/1657102852-g5rdq53W";
-                      5
-                      }
+                  function winopen() {
+                    this.window.opener = null; 
+                    window.close(); 
                   }
-                
-
                 </script>
+                
+        
          
             
 
