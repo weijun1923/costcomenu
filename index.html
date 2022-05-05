@@ -41,7 +41,7 @@
                 </div>
                 
                 
-                  <input type="button"  value="我同意以上規則，進入網站" onclick="winopen();"/>
+                  <input type="button"  value="我同意以上規則，進入網站" onclick="wincloes();"/>
                 
                 <br>
                 <br>
@@ -49,9 +49,9 @@
                 <br>
                 <br>
                 <script>
-                  function winopen() {
-                    this.window.opener = null; 
-                    window.close(); 
+                  function wincloes() {
+                    setTimeout(window.close,300)
+
                   }
                 </script>
                 
