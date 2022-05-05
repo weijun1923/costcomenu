@@ -41,19 +41,34 @@
                 </div>
                 
                 
-                  <input type="button"  value="我同意以上規則，進入網站" onclick="winopen()"/>
+                  <input type="button"  value="我同意以上規則，進入網站" onclick="winopen();"/>
                 
                 <br>
                 <br>
                 <br>
                 <br>
                 <br>
+                
+                
                 <script>
-                  function winopen() {
-                    parent.window.location.replace("https://liff.line.me/1657102852-g5rdq53W");//父頁面跳轉到
+                  function winopen(){
+                      if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                      2
+                        window.location.href = "https://line.me/R/app/1657102852-g5rdq53W";
+                      3
+                      } else {
+                      4
+                        window.location.href = "https://liff.line.me/1657102852-g5rdq53W";
+                      5
+                      }
                   }
-                </script>
                 
+
+                </script>
+         
+            
+
+               
             </div>
         </div>
     </div>
