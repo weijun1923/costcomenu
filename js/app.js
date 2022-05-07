@@ -18,9 +18,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -36,9 +36,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -54,9 +54,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -72,9 +72,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -90,9 +90,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -108,9 +108,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -126,9 +126,9 @@ function renderProdcuts(){
         <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -144,9 +144,9 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -162,9 +162,9 @@ function renderProdcuts(){
         <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <img src="${product.imgSrc}"class="card-img-top ">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body">
+            <div class="card-body id="${product.id}">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">

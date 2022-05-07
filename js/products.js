@@ -6,7 +6,7 @@ const products = [
     price: 380,
     instock: 100,
     imgSrc: "img/homelife/render1/115671-01.jpg",
-    href: "115671.html",
+    href: "Details/115671.html",
   },
   {
     id:115672,
@@ -14,7 +14,7 @@ const products = [
     price: 315,
     instock: 100,
     imgSrc: "img/homelife/render1/115672-01.jpg",
-    href: "115672.html",
+    href: "Details/115672.html",
   },
   {
     id:291663,
@@ -22,7 +22,7 @@ const products = [
     price: 300,
     instock: 100,
     imgSrc: "img/homelife/render1/291663-01.jpg",
-    href: "291663.html",
+    href: "Details/291663.html",
   },
   {//身體清潔用品 render2 id:3
     id:81001,
@@ -30,7 +30,7 @@ const products = [
     price: 1630,
     instock: 100,
     imgSrc: "img/homelife/render2/81001-01.jpg",
-    href: "81001.html",
+    href: "Details/81001.html",
   },
   {
     id:121169,
@@ -38,7 +38,7 @@ const products = [
     price: 220,
     instock: 100,
     imgSrc: "img/homelife/render2/121169-01.jpg",
-    href: "121169.html",
+    href: "Details/121169.html",
   },
   {
     id:133093,
@@ -46,7 +46,7 @@ const products = [
     price: 470,
     instock: 100,
     imgSrc: "img/homelife/render2/133093-01.jpg",
-    href: "133093.html",
+    href: "Details/133093.html",
   },
   {
     id:133673,
@@ -54,7 +54,7 @@ const products = [
     price: 550,
     instock: 100,
     imgSrc: "img/homelife/render2/133673-01.jpg",
-    href: "133673.html",
+    href: "Details/133673.html",
   },
   {
     id:155405,
@@ -62,7 +62,7 @@ const products = [
     price: 560,
     instock: 100,
     imgSrc: "img/homelife/render2/155405-01.jpg",
-    href: "155405.html",
+    href: "Details/155405.html",
   },
   {
     id:213980,
@@ -70,7 +70,7 @@ const products = [
     price: 760,
     instock: 100,
     imgSrc: "img/homelife/render2/213980-01.jpg",
-    href: "213980.html",
+    href: "Details/213980.html",
   },
   {
     id:213984,
@@ -78,7 +78,7 @@ const products = [
     price: 630,
     instock: 100,
     imgSrc: "img/homelife/render2/213984-01.jpg",
-    href: "213984.html",
+    href: "Details/213984.html",
   },
   {
     id:226672,
@@ -86,7 +86,7 @@ const products = [
     price: 675,
     instock: 100,
     imgSrc: "img/homelife/render2/226672-01.jpg",
-    href: "226672.html",
+    href: "Details/226672.html",
   },
   {
     id:288158,
@@ -94,7 +94,7 @@ const products = [
     price: 630,
     instock: 100,
     imgSrc: "img/homelife/render2/288158-01.jpg",
-    href: "288158.html",
+    href: "Details/288158.html",
   },
   {
     id:315153,
@@ -102,7 +102,7 @@ const products = [
     price: 1870,
     instock: 100,
     imgSrc: "img/homelife/render2/315153-01.jpg",
-    href: "315153.html",
+    href: "Details/315153.html",
   },
   {
     id:599899,
@@ -110,7 +110,7 @@ const products = [
     price: 360,
     instock: 100,
     imgSrc: "img/homelife/render2/599899-01.jpg",
-    href: "599899.html",
+    href: "Details/599899.html",
   },
   {
     id:631007,
@@ -118,7 +118,7 @@ const products = [
     price: 560,
     instock: 100,
     imgSrc: "img/homelife/render2/631007-01.jpg",
-    href: "631007.html",
+    href: "Details/631007.html",
   },
   {
     id:1251239,
@@ -126,7 +126,7 @@ const products = [
     price: 410,
     instock: 100,
     imgSrc: "img/homelife/render2/1251239-01.jpg",
-    href: "1251239.html",
+    href: "Details/1251239.html",
   },
   {
     id:1368233, //id:16
@@ -134,7 +134,7 @@ const products = [
     price: 510,
     instock: 100,
     imgSrc: "img/homelife/render2/1368233-01.jpg",
-    href: "1368233.html",
+    href: "Details/1368233.html",
   },
   { //杯瓶器皿 id:17 render3
     id:126473,
@@ -142,7 +142,7 @@ const products = [
     price: 620,
     instock: 100,
     imgSrc: "img/homelife/render3/126473-01.jpg",
-    href: "126473.html",
+    href: "Details/126473.html",
   },
   {
     id:1564242, //id:18 render3
@@ -150,7 +150,7 @@ const products = [
     price: 690,
     instock: 100,
     imgSrc: "img/homelife/render3/1564242-01.jpg",
-    href: "1564242.html",
+    href: "Details/1564242.html",
   },
   {
     id:92182, //id:19 render4 保護保養品
@@ -158,7 +158,7 @@ const products = [
     price: 630,
     instock: 100,
     imgSrc: "img/homelife/render4/92182-01.jpg",
-    href: "92182.html",
+    href: "Details/92182.html",
   },
   {
     id:98572,
@@ -166,7 +166,7 @@ const products = [
     price: 450,
     instock: 100,
     imgSrc: "img/homelife/render4/98572-01.jpg",
-    href: "98572.html",
+    href: "Details/98572.html",
   },
   {
     id:123998,
@@ -174,7 +174,7 @@ const products = [
     price: 1130,
     instock: 100,
     imgSrc: "img/homelife/render4/123998-01.jpg",
-    href: "123998.html",
+    href: "Details/123998.html",
   },
   {
     id:126578,
@@ -182,7 +182,7 @@ const products = [
     price: 855,
     instock: 100,
     imgSrc: "img/homelife/render4/126578-01.jpg",
-    href: "126578.html",
+    href: "Details/126578.html",
   },
   {
     id:130435,
@@ -190,7 +190,7 @@ const products = [
     price: 620,
     instock: 100,
     imgSrc: "img/homelife/render4/130435-01.jpg",
-    href: "130435.html",
+    href: "Details/130435.html",
   },
   {
     id:130679,
@@ -198,7 +198,7 @@ const products = [
     price: 1000,
     instock: 100,
     imgSrc: "img/homelife/render4/130679-01.jpg",
-    href: "130679.html",
+    href: "Details/130679.html",
   },
   {
     id:131162,
@@ -206,7 +206,7 @@ const products = [
     price: 730,
     instock: 100,
     imgSrc: "img/homelife/render4/131162-01.jpg",
-    href: "131162.html",
+    href: "Details/131162.html",
   },
   {
     id:132775,
@@ -214,7 +214,7 @@ const products = [
     price: 800,
     instock: 100,
     imgSrc: "img/homelife/render4/132775-01.jpg",
-    href: "132775.html",
+    href: "Details/132775.html",
   },
   {
     id:134433,
@@ -222,7 +222,7 @@ const products = [
     price: 495,
     instock: 100,
     imgSrc: "img/homelife/render4/134433-01.jpg",
-    href: "134433.html",
+    href: "Details/134433.html",
   },
   {
     id:191447,
@@ -230,7 +230,7 @@ const products = [
     price: 645,
     instock: 100,
     imgSrc: "img/homelife/render4/191447-01.jpg",
-    href: "191447.html",
+    href: "Details/191447.html",
   },
   {
     id:204055,
@@ -238,7 +238,7 @@ const products = [
     price: 1010,
     instock: 100,
     imgSrc: "img/homelife/render4/204055-01.jpg",
-    href: "204055.html",
+    href: "Details/204055.html",
   },
   {
     id:228989,
@@ -246,7 +246,7 @@ const products = [
     price: 730,
     instock: 100,
     imgSrc: "img/homelife/render4/228989-01.jpg",
-    href: "228989.html",
+    href: "Details/228989.html",
   },
   {
     id:303688,
@@ -254,7 +254,7 @@ const products = [
     price: 620,
     instock: 100,
     imgSrc: "img/homelife/render4/303688-01.jpg",
-    href: "303688.html",
+    href: "Details/303688.html",
   },
   {
     id:303689,
@@ -262,7 +262,7 @@ const products = [
     price: 680,
     instock: 100,
     imgSrc: "img/homelife/render4/303689-01.jpg",
-    href: "303689.html",
+    href: "Details/303689.html",
   },
   {
     id:406083,
@@ -270,7 +270,7 @@ const products = [
     price: 785,
     instock: 100,
     imgSrc: "img/homelife/render4/406083-01.jpg",
-    href: "406083.html",
+    href: "Details/406083.html",
   },
   {
     id:570816,
@@ -278,7 +278,7 @@ const products = [
     price: 520,
     instock: 100,
     imgSrc: "img/homelife/render4/570816-01.jpg",
-    href: "570816.html",
+    href: "Details/570816.html",
   },
   {
     id:864040, //id:35  render4 保護保養品
@@ -286,7 +286,7 @@ const products = [
     price: 405,
     instock: 100,
     imgSrc: "img/homelife/render4/864040-01.jpg",
-    href: "864040.html",
+    href: "Details/864040.html",
   },
   {
     id:135512, // 家用清潔 render5 id:36
@@ -294,7 +294,7 @@ const products = [
     price: 770,
     instock: 100,
     imgSrc: "img/homelife/render5/135512-01.jpg",
-    href: "135512.html",
+    href: "Details/135512.html",
   },
   {
     id:393577, // 家用清潔 render5 id:37
@@ -302,7 +302,7 @@ const products = [
     price: 630,
     instock: 100,
     imgSrc: "img/homelife/render5/393577-01.jpg",
-    href: "393577.html",
+    href: "Details/393577.html",
   },
   {
     id:95977, // 家庭計畫 render6 id:38
@@ -310,7 +310,7 @@ const products = [
     price: 730,
     instock: 100,
     imgSrc: "img/homelife/render6/95977-01.jpg",
-    href: "95977.html",
+    href: "Details/95977.html",
   },
   {
     id:409381, // 紙巾類 render7 id:39
@@ -318,7 +318,7 @@ const products = [
     price: 330,
     instock: 100,
     imgSrc: "img/homelife/render7/409381-01.jpg",
-    href: "409381.html",
+    href: "Details/409381.html",
   },
   {
     id:131124, // 蚊蟲防治 render8 id:40
@@ -326,7 +326,7 @@ const products = [
     price: 1780,
     instock: 100,
     imgSrc: "img/homelife/render8/131124-01.jpg",
-    href: "131124.html",
+    href: "Details/131124.html",
   },
   { //食品
     id:51850, // 常備食品、乾貨 render9 id:41
@@ -334,7 +334,7 @@ const products = [
     price: 250,
     instock: 100,
     imgSrc: "img/food/render9/51850-01.jpg",
-    href: "51850.html",
+    href: "Details/51850.html",
   },
   { 
     id:56629, 
@@ -342,7 +342,7 @@ const products = [
     price: 295,
     instock: 100,
     imgSrc: "img/food/render9/56629-01.jpg",
-    href: "56629.html",
+    href: "Details/56629.html",
   },
   { 
     id:56630, 
@@ -350,7 +350,7 @@ const products = [
     price: 260,
     instock: 100,
     imgSrc: "img/food/render9/56630-01.jpg",
-    href: "56630.html",
+    href: "Details/56630.html",
   },
   { 
     id:72056, 
@@ -358,7 +358,7 @@ const products = [
     price: 620,
     instock: 100,
     imgSrc: "img/food/render9/72056-01.jpg",
-    href: "72056.html",
+    href: "Details/72056.html",
   },
   { 
     id:86456, 
@@ -366,7 +366,7 @@ const products = [
     price: 310,
     instock: 100,
     imgSrc: "img/food/render9/86456-01.jpg",
-    href: "86456.html",
+    href: "Details/86456.html",
   },
   { 
     id:96387, 
@@ -374,7 +374,7 @@ const products = [
     price: 530,
     instock: 100,
     imgSrc: "img/food/render9/96387-01.jpg",
-    href: "96387.html",
+    href: "Details/96387.html",
   },
   { 
     id:99549, 
@@ -382,7 +382,7 @@ const products = [
     price: 210,
     instock: 100,
     imgSrc: "img/food/render9/99549-01.jpg",
-    href: "99549.html",
+    href: "Details/99549.html",
   },
   { 
     id:114773, 
@@ -390,7 +390,7 @@ const products = [
     price: 380,
     instock: 100,
     imgSrc: "img/food/render9/114773-01.jpg",
-    href: "114773.html",
+    href: "Details/114773.html",
   },
   { 
     id:116289, 
@@ -398,7 +398,7 @@ const products = [
     price: 530,
     instock: 100,
     imgSrc: "img/food/render9/116289-01.jpg",
-    href: "116289.html",
+    href: "Details/116289.html",
   },
   { 
     id:126230, 
@@ -406,7 +406,7 @@ const products = [
     price: 380,
     instock: 100,
     imgSrc: "img/food/render9/126230-01.jpg",
-    href: "126230.html",
+    href: "Details/126230.html",
   },
   { 
     id:128085, 
@@ -414,7 +414,7 @@ const products = [
     price: 530,
     instock: 100,
     imgSrc: "img/food/render9/128085-01.jpg",
-    href: "128085.html",
+    href: "Details/128085.html",
   },
   { 
     id:133013, 
@@ -422,7 +422,7 @@ const products = [
     price: 310,
     instock: 100,
     imgSrc: "img/food/render9/133013-01.jpg",
-    href: "133013.html",
+    href: "Details/133013.html",
   },
   { //常備食品、乾貨 render9 id:53
     id:210472, 
@@ -430,6 +430,6 @@ const products = [
     price: 430,
     instock: 100,
     imgSrc: "img/food/render9/210472-01.jpg",
-    href: "210472.html",
+    href: "Details/210472.html",
   },
 ];

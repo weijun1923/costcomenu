@@ -23,7 +23,13 @@ function triggerLIFF() {
           }
         ]).then(res => window.alert(res.status))
           .catch(error => window.alert(error));
-          liff.closeWindow();
+          Swal.fire({
+            text:'訂單已送出',
+            icon:'success'
+          }).then((result) => {
+            liff.closeWindow();
+          })
+          
       });
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
