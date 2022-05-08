@@ -42,7 +42,7 @@ const products = [
   },
   {
     id:133093,
-    name: "牛乳石鹼蘆薈精華沐浴乳X1入",
+    name: "日本牛乳石鹼蘆薈精華沐浴乳X1入",
     price: 470,
     instock: 100,
     imgSrc: "img/homelife/render2/133093-01.jpg",
@@ -98,7 +98,7 @@ const products = [
   },
   {
     id:315153,
-    name: "貝膚黛瑪 舒敏高效潔膚液 H2O 850毫升 X 3入",
+    name: "	法國貝膚黛瑪 舒敏高效潔膚液 H2O 850毫升 X 3入",
     price: 1870,
     instock: 100,
     imgSrc: "img/homelife/render2/315153-01.jpg",
@@ -194,7 +194,7 @@ const products = [
   },
   {
     id:130679,
-    name: "AHC 超清爽持久 超水感保濕防曬組 防曬棒 22公克 X 2入 + 防曬乳 50毫升 X 1入",
+    name: "韓國AHC 超清爽持久 超水感保濕防曬組 防曬棒 22公克 X 2入 + 防曬乳 50毫升 X 1入",
     price: 1000,
     instock: 100,
     imgSrc: "img/homelife/render4/130679-01.jpg",
@@ -218,7 +218,7 @@ const products = [
   },
   {
     id:134433,
-    name: "水潤肌柔光透防曬飾底凝露",
+    name: "曼秀雷敦水潤肌柔光透防曬飾底凝露輕舞香氛 80公克 X 2入",
     price: 495,
     instock: 100,
     imgSrc: "img/homelife/render4/134433-01.jpg",
@@ -257,7 +257,7 @@ const products = [
     href: "Details/303688.html",
   },
   {
-    id:303689,
+    id:303689,//從這邊開始
     name: "香蕉船淨護系列運動防曬乳",
     price: 680,
     instock: 100,

@@ -268,3 +268,6 @@ background-color: #212529;
 .item a:hover{
     background-color: rgb(144, 145, 145);
 }
+.shop{
+    position: relative;
+}
