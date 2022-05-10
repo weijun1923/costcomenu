@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
 </head>
 
-<body  onload="goToIndex()"  >
+<body  onload="goToIndex();getScrollTop();"  >
     <header id="header">
         <nav class="navbar  navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -168,6 +168,7 @@
         </div>
     </div>
     <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%;" rows="10"></textarea>
+    
 
         <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
         <script src="js/products.js"> </script>
@@ -197,27 +198,32 @@
             }
         </script>
         <script>
-            history.replaceState(SearchData,Title,URL);
-            localStorage.MainPage = MainPage;
-            localStorageTab = Tab;
-            if(history.state != null){
-                SearchData = history.state;
-                MainPage= SearchData.MainPage;
-                Tab= SearchData.Tab;
-                Page = SearchData.Page
-                showPageTab(MainPage,Tab,Page );
-            }else{
-                MainPage= localStorage.MainPage;
-                Tab= localStorage.Tab;
-                if(MainPage != undefined){
-                    showPageTab(MainPage,Tab,1);
+            function getScrollTop(){
+            var bodyTop = 0;
+            if (typeof window.pageYOffset != "undefined") {
+                bodyTop = window.pageYOffset;
+
+            } else if (typeof document.compatMode != "undefined"
+                        && document.compatMode != "BackCompat") {
+                bodyTop = document.documentElement.scrollTop;
+
+            } else if (typeof document.body != "undefined") {
+                bodyTop = document.body.scrollTop;
+            }
+            sessionStorage.setItem("Ltop", bodyTop);
+
+            var height = sessionStorage.getItem("Ltop");
+            if(height){
+                if(document.documentElement.scrollTop != undefined){
+                    document.documentElement.scrollTop = height;
                 }else{
-                    showPageTab('Index','Tab1',1);
+                    document.scrollTop = height;
                 }
             }
 
+            }
+            
         </script>
-
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
