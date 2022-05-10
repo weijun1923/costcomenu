@@ -28,6 +28,9 @@ function triggerLIFF() {
             icon:'success'
           }).then((result) => {
             liff.closeWindow();
+            localStorage.removeItem('CART');
+           
+
           })
           
       });

@@ -199,20 +199,7 @@
         </script>
         <script>
             function getScrollTop(){
-            var bodyTop = 0;
-            if (typeof window.pageYOffset != "undefined") {
-                bodyTop = window.pageYOffset;
-
-            } else if (typeof document.compatMode != "undefined"
-                        && document.compatMode != "BackCompat") {
-                bodyTop = document.documentElement.scrollTop;
-
-            } else if (typeof document.body != "undefined") {
-                bodyTop = document.body.scrollTop;
-            }
-            sessionStorage.setItem("Ltop", bodyTop);
-
-            var height = sessionStorage.getItem("Ltop");
+            var height = sessionStorage.getItem("Stop");
             if(height){
                 if(document.documentElement.scrollTop != undefined){
                     document.documentElement.scrollTop = height;
@@ -223,6 +210,21 @@
 
             }
             
+        </script>
+        <script>
+            function myAlert(){
+                var scrollTop=0;
+                if(document.documentElement&&document.documentElement.scrollTop)
+                {
+                    scrollTop = document.documentElement.scrollTop;
+                }
+                else if(document.body)
+                {
+                    scrollTop = document.body.scrollTop;
+                }
+                sessionStorage.setItem("Stop", scrollTop);
+            }
+            document.addEventListener('click', myAlert);
         </script>
 
         <!-- Bootstrap JavaScript Libraries -->
