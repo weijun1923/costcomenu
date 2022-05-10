@@ -257,8 +257,8 @@ const products = [
     href: "Details/303688.html",
   },
   {
-    id:303689,//從這邊開始
-    name: "香蕉船淨護系列運動防曬乳",
+    id:303689,
+    name: "香蕉船淨護系列運動防曬乳x2入",
     price: 680,
     instock: 100,
     imgSrc: "img/homelife/render4/303689-01.jpg",
