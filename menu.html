@@ -30,12 +30,36 @@
                         <li class="nav-item border-bottom">
                             <a class="nav-link active " aria-current="page" href="https://liff.line.me/1657102852-g5rdq53W">首頁</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a class="nav-link" href="#render1">居家生活</a>
-                        </li>
-                        <li class="nav-item border-bottom">
-                            <a class="nav-link" href="#render9">食品</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              居家生活
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#render1">女性護理用品</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render2">身體清潔用品</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render3">杯瓶器皿</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render4">保護保養品</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render5">家用清潔</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render6">家庭計畫</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render7">紙巾類</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#render8">蚊蟲防治</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                食品
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#render9">乾貨</a></li>
+                            </ul>
+                          </li>
                     </ul>
                 </div>
             </div>
@@ -45,23 +69,6 @@
     <div class="container-fluid">
         <div class="row render1" id="render1">
             <span class="title">居家生活</span>
-            <!-- 滾動選單 -->
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  請選擇分類
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#render1">女性護理用品</a></li>
-                  <li><a class="dropdown-item" href="#render2">身體清潔用品</a></li>
-                  <li><a class="dropdown-item" href="#render3">杯瓶器皿</a></li>
-                  <li><a class="dropdown-item" href="#render4">保護保養品</a></li>
-                  <li><a class="dropdown-item" href="#render5">家用清潔</a></li>
-                  <li><a class="dropdown-item" href="#render6">家庭計畫</a></li>
-                  <li><a class="dropdown-item" href="#render7">紙巾類</a></li>
-                  <li><a class="dropdown-item" href="#render8">蚊蟲防治</a></li>
-                </ul>
-              </div>
             <span class="smtitle" id="FeminineCareProducts">女性護理用品</span>
             <!-- 選染商品項目  -->
 
@@ -103,25 +110,13 @@
             <span class="smtitle" id="render8">蚊蟲防治</span>
         </div>
     </div>
+    
     <div class="container-fluid">
-        <div class="row render9" id="render9">
+        <div class="row render9">
             <span class="title">食品</span>
-            <!-- 滾動選單 -->
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  請選擇分類
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#render9">乾貨</a></li>
-                  
-                </ul>
-              </div>
-            <span class="smtitle" id="FeminineCareProducts">乾貨</span>
+            <span class="smtitle" id="render9">乾貨</span>
         </div>
     </div>
-
-
     <!-- 購物車清單 -->
     <div class="shopping-bag">
         <a href="#shopinglist">
@@ -201,7 +196,27 @@
                 }
             }
         </script>
-        
+        <script>
+            history.replaceState(SearchData,Title,URL);
+            localStorage.MainPage = MainPage;
+            localStorageTab = Tab;
+            if(history.state != null){
+                SearchData = history.state;
+                MainPage= SearchData.MainPage;
+                Tab= SearchData.Tab;
+                Page = SearchData.Page
+                showPageTab(MainPage,Tab,Page );
+            }else{
+                MainPage= localStorage.MainPage;
+                Tab= localStorage.Tab;
+                if(MainPage != undefined){
+                    showPageTab(MainPage,Tab,1);
+                }else{
+                    showPageTab('Index','Tab1',1);
+                }
+            }
+
+        </script>
 
 
         <!-- Bootstrap JavaScript Libraries -->

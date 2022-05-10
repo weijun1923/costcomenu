@@ -13,7 +13,7 @@ const subtotalE1 = document.querySelector(".subtotal");
 const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 //渲染產品 
 function renderProdcuts(){
-    products.slice(0,3).forEach( (product) => {
+    products[0].forEach( (product) => {
         productsE1.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -31,7 +31,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(3,17).forEach( (product) => {
+    products[1].forEach( (product) => {
         productsE2.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -49,7 +49,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(17,19).forEach( (product) => {
+    products[2].forEach( (product) => {
         productsE3.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -67,7 +67,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(19,36).forEach( (product) => {
+    products[3].forEach( (product) => {
         productsE4.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -85,7 +85,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(36,38).forEach( (product) => {
+    products[4].forEach( (product) => {
         productsE5.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -103,7 +103,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(38,39).forEach( (product) => {
+    products[5].forEach( (product) => {
         productsE6.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -121,7 +121,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(39,40).forEach( (product) => {
+    products[6].forEach( (product) => {
         productsE7.innerHTML +=`
         <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -139,7 +139,7 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(40,41).forEach( (product) => {
+    products[7].forEach( (product) => {
         productsE8.innerHTML +=`
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
@@ -157,14 +157,14 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products.slice(41,54).forEach( (product) => {
+    products[8].forEach( (product) => {
         productsE9.innerHTML +=`
-        <div class="col-6  col-md-3 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
             </div>
-            <div class="card-body id="${product.id}">
+            <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
                 <p class="money">$${product.price}</p>
                 <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
@@ -190,7 +190,15 @@ function addToCart(id) {
     if (cart.some((item) => item.id === id)) {
         alert("商品已經在購物車囉!")
     }else {
-        const item = products.find((product) => product.id === id);
+        const newProducts = products[0].concat(products[1],
+        products[2],
+        products[3],
+        products[4],
+        products[5],
+        products[6],
+        products[7],
+        products[8]);
+        const item = newProducts.find((product) => product.id === id);
 
         cart.push({
             ...item,
