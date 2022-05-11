@@ -448,5 +448,43 @@ const products = [
       imgSrc: "img/food/render9/210472-01.jpg",
       href: "Details/210472.html",
     },
+  ],
+  [
+    { //[9]調味料 render10 
+      id:73108, 
+      name: "日本瀬戶風味芝麻香鬆組295公克/組",
+      price: 525,
+      instock: 100,
+      imgSrc: "img/food/render10/73108-01.jpg",
+      href: "Details/73108.html",
+    },
+  ],
+  [
+    { //[10]家電 電風扇 render11
+      id:133802, 
+      name: "艾美特 USB手持充電風扇 2入組 (UD802)",
+      price: 1010,
+      instock: 100,
+      imgSrc: "img/3c/render11/133802-01.jpg",
+      href: "Details/133802.html",
+    },
+  ],
+  [
+    { //[11]婦幼 尿布 render12
+      id:156693, 
+      name: "幫寶適一級幫S號日本境内版48公斤228片",
+      price: 1325,
+      instock: 100,
+      imgSrc: "img/baby/render12/156693-01.jpg",
+      href: "Details/156693.html",
+    },
+    { 
+      id:156693, 
+      name: "幫寶適一級幫S號日本境内版48公斤228片",
+      price: 1325,
+      instock: 100,
+      imgSrc: "img/baby/render12/156693-01.jpg",
+      href: "Details/156693.html",
+    },
   ]
 ];
