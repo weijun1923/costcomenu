@@ -11,6 +11,7 @@ const productsE9 = document.querySelector(".render9");
 const productsE10 = document.querySelector(".render10");
 const productsE11 = document.querySelector(".render11");
 const productsE12 = document.querySelector(".render12");
+const productsE13 = document.querySelector(".render13");
 const cartItemE1 = document.querySelector(".cart-items");
 const subtotalE1 = document.querySelector(".subtotal");
 const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
@@ -232,6 +233,25 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
+    products[12].forEach( (product) => {
+        productsE13.innerHTML +=`
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
+        <div class="card h-100" >
+            <div class="imgwapper">
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            </div>
+            <div class="card-body id="${product.id}"">
+                <h4 class="card-text">${product.name}</h4>
+                <p class="money">$${product.price}</p>
+                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
+            </div>
+            <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button type="button" class="bottonshadow">加入購物車</button>
+            </div>
+        </div>
+    </div>`;
+    })
+    
    
    
 }
