@@ -286,3 +286,11 @@ background-color: #212529;
 .navbar-light .navbar-brand {
     color: #024757;
 }
+.navbar-brand img{
+    width: 200px;
+    height: 40px
+}
+.offcanvas-title img{
+    width: 200px;
+    height: 40px;
+}
