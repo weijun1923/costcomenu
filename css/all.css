@@ -2,6 +2,10 @@
 
 
 /* 卡片內容 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  font-family: 'Noto Sans TC',sans-serif !important;
+}
 .money{
 color: brown;
 font-size: 20px;
@@ -167,7 +171,7 @@ font-size: 20px;
         z-index: 3;
         top: 0;
         color: #024757;
-        right: 100px;
+        right:75px;
         text-decoration: none;
     }
     .shopping-bag i{
@@ -287,10 +291,10 @@ background-color: #212529;
     color: #024757;
 }
 .navbar-brand img{
-    width: 200px;
-    height: 40px
+    width: 130px;
+    height: auto;
 }
 .offcanvas-title img{
-    width: 150px;
-    height: 40px;
+    width: 130px;
+    height: auto;
 }

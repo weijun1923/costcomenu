@@ -293,18 +293,6 @@
             }
             document.addEventListener('click', myAlert);
         </script>
-        <script>
-            var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
-            var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
-            return new bootstrap.Offcanvas(offcanvasEl)
-                })
-            var navclick = document.querySelectorAll(".dropdown-menu li a");
-            if (navclick.click()){
-                return hidden.bs.offcanvas;
-            }
-            
-        </script>
-
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
             integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
