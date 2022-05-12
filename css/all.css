@@ -14,16 +14,16 @@ font-size: 20px;
 .card input{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: #1C6FBC;
+    background-color: #3e94e4;
     border-radius: 5px;
     position: absolute;
-    bottom: 40px;
+    bottom: 55px;
     left: 50%;
     transform: translate(-50%);
-    font-size: 10px;
+    font-size: 20px;
     border: none;
-    width: 100px;
-    height: 20px;
+    width: 100%;
+    height: auto;
 
    
 }
@@ -45,15 +45,15 @@ font-size: 20px;
 /* 購物車買進圖示 */
 
 .add-to-cart button{
-    background-color: #C00053;
+    background-color: #e12b7a;
     border: none;
     border-radius: 5px;
     padding:0px;
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
     color: rgb(250, 250, 250);
-    width: 100px;
-    height: 20px;
+    width: 100%;
+    height: auto;
 }
 /* 卡片標題 */
 .title{

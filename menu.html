@@ -29,7 +29,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/word.png" alt=""></h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
                 </div>
                 <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -294,14 +294,15 @@
             document.addEventListener('click', myAlert);
         </script>
         <script>
-            $('.navbar a').on('click', function()
-            {
-            //點擊時，如果已經沒有下一層選單的話，則再關閉navbar
-            if($(this).attr("data-toggle") == undefined)
-            {
-            $('.navbar-toggle').click();
+            var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+            var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+            return new bootstrap.Offcanvas(offcanvasEl)
+                })
+            var navclick = document.querySelectorAll(".dropdown-menu li a");
+            if (navclick.click()){
+                return hidden.bs.offcanvas;
             }
-            });
+            
         </script>
 
         <!-- Bootstrap JavaScript Libraries -->
