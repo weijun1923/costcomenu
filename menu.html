@@ -18,17 +18,17 @@
 
 <body  onload="goToIndex();getScrollTop();"  >
     <header id="header">
-        <nav class="navbar navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-light fixed-top" style="background-color: white;">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="">
-            </a>
+                <a class="navbar-brand" href="#">
+                    東勢costco代購
+                </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo.jpg" alt="">東勢Costco代購</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">東勢Costco代購</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -292,6 +292,16 @@
                 localStorage.setItem("Stop", scrollTop);
             }
             document.addEventListener('click', myAlert);
+        </script>
+        <script>
+            $('.navbar a').on('click', function()
+            {
+            //點擊時，如果已經沒有下一層選單的話，則再關閉navbar
+            if($(this).attr("data-toggle") == undefined)
+            {
+            $('.navbar-toggle').click();
+            }
+            });
         </script>
 
         <!-- Bootstrap JavaScript Libraries -->

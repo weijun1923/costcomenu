@@ -59,18 +59,20 @@ font-size: 20px;
 .title{
     font-size: 26px;
    display: inline-block;
-   margin-top: 80px;
+   margin-top: 55px;
    text-align: center;
-   background-color: #6a655f;
-   color: aliceblue;
+   background-color: #a8dff1;
+   color: black;
+   padding: 20px;
 }
 .smtitle{
     font-size: 26px;
    display: inline-block;
    margin-top: 0px;
    text-align: center;
-   background-color: rgb(221, 243, 235);
-   color: rgb(4, 4, 4);
+   background-color: #f5e2d4;
+   color: black;
+   padding: 20px;
 }
 
 
@@ -164,7 +166,7 @@ font-size: 20px;
         display: flex;
         z-index: 3;
         top: 0;
-        color: #ddd;
+        color: #024757;
         right: 100px;
         text-decoration: none;
     }
@@ -174,7 +176,7 @@ font-size: 20px;
         display: flex;
     }
     .total-items-in-cart{
-        color: #C00053;
+        color: #a8dff1;
         padding-left: 10px;
     }
 
@@ -281,10 +283,6 @@ background-color: #212529;
 .nav-link{
     font-size: 20px;
 }
-.offcanvas-title img{
-    width:20%;
-}
-.navbar-brand img{
-    width: 80px;
-    height: 50px;
+.navbar-light .navbar-brand {
+    color: #024757;
 }

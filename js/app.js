@@ -268,14 +268,7 @@ function addToCart(id) {
     if (cart.some((item) => item.id === id)) {
         alert("商品已經在購物車囉!")
     }else {
-        const newProducts = products[0].concat(products[1],
-        products[2],
-        products[3],
-        products[4],
-        products[5],
-        products[6],
-        products[7],
-        products[8]);
+        const newProducts = [].concat(...products);
         const item = newProducts.find((product) => product.id === id);
 
         cart.push({
