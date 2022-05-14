@@ -275,7 +275,11 @@ function addToCart(id) {
             ...item,
             numberOfUnits : 1
         });
-
+        Swal.fire({
+            text:'商品已加入購物車',
+            icon:'success'
+          })
+        
     }
     
     updateCart();
