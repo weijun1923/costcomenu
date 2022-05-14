@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid shop">
         <div class="row ">
-            <div class="col-12 col-md-2">
+            <div class="col-12 ">
                 <div id="carouselExampleIndicators" class="carousel slide carousel-dark carouselWapper"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -55,7 +55,7 @@
         </div>
     </div>
     </div>
-    <div class="container-fluid ">
+    <div class="container-fluid shopmore">
         <div class="row ">
             <div class="col-12 col-md-6 offset-md-3">
                 <h3 class="smallTitle text-center">商品詳情</h3>
@@ -150,12 +150,76 @@
                 </table>
 
 
-                <div class="back">
-                    <button onclick="history.go(-1)">購買頁面在上一頁，點此返回上一頁</button>
-                </div>
             </div>
         </div>
     </div>
+    <footer class="bg-light text-center text-white fixed-bottom ">
+        <!-- Grid container -->
+        <div class="container p-0 pb-0" >
+            <!-- Section: Social media -->
+            <section class="mb-0 back"  >
+                <a class="btn  btn-floating m-1 pb-0"  href="../menu.html"
+                    role="button"><i class="fa-solid fa-house"></i>
+                    <p>首頁</p>
+                </a>
+                <a class="btn  btn-floating m-1 pb-0"  href="https://liff.line.me/1657102852-g5rdq53W"
+                    role="button"><i class="fa-solid fa-cart-shopping"></i>
+                    <p>購物車</p>
+                </a>
+                
+
+
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
+    <script src="../js/products.js"></script>
+    <script>
+        const productsE1 = document.querySelector(".back");
+        const newProducts = [].concat(...products);
+        const item = newProducts.find((product) => product.id === 303688); //找到id 傳回物件
+        var newarry = []; //成立新陣列
+        newarry.push(item); // 將物件添加到新陣列中
+        function renderProdcuts() {
+            newarry.forEach((product) => {
+                productsE1.innerHTML += `
+                <div class="add-to-cart btn  btn-floating " style="background-color: #f8f9fb;" onclick="addToCart(${product.id})">
+                    <button type="button" class="bottonshadow"> 加入購物車</button>
+                </div>
+        `;
+            })
+        };
+        renderProdcuts();
+        let cart = JSON.parse(localStorage.getItem("CART")) || [];
+        function updateCart() {
+            // 儲存購物清單
+            localStorage.setItem("CART", JSON.stringify(cart));
+        }
+        updateCart();
+        // 加入購物車
+        function addToCart(id) {
+            // 檢查購物車中是否重複商品
+            if (cart.some((item) => item.id === id)) {
+                alert("商品已經在購物車囉!")
+            } else {
+                const newProducts = [].concat(...products);
+                const item = newProducts.find((product) => product.id === id);
+
+                cart.push({
+                    ...item,
+                    numberOfUnits: 1
+                });
+
+            }
+
+            updateCart();
+
+        }
+        
+    </script>
 
 
 

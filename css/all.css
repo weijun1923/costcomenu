@@ -81,6 +81,9 @@ font-size: 20px;
 
 
 /* 購物車 */
+#shopinglist{
+    display: none;
+}
 .cart{
     position: relative;
 }

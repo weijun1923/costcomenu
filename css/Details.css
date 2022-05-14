@@ -1,23 +1,30 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-.imgwapper img{
+body {
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+
+.imgwapper img {
     width: 100%;
 }
-.col-12 span{
+
+.col-12 span {
     text-align: center;
     font-size: 25px;
     color: brown;
     display: block;
 }
-.smallTitle{
+
+.smallTitle {
     margin: 20px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .carousel {
         max-height: 500;
         max-width: 753px;
         width: auto;
-        height: auto; 
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
@@ -25,36 +32,61 @@
     }
 
     .carousel .item {
-            width: 100%;
-            height: 500px;
-            min-height: 100px;
-            background-color: #777;
-        }
-        .carousel-inner > .item > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            width: auto;
-            height: auto;
-          }
-    
+        width: 100%;
+        height: 500px;
+        min-height: 100px;
+        background-color: #777;
+    }
+
+    .carousel-inner>.item>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
 }
-.back button{
-    background-color: #f0ba50; /* Green */
+
+.back button {
+    background-color: #f0ba50;
+    /* Green */
     border: none;
     color: rgb(15, 14, 14);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
-  
+
 }
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-body{
-  font-family: 'Noto Sans TC',sans-serif !important;
+
+
+.back .bottonshadow {
+    background-color: #e12b7a;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.back a {
+    font-size: 20px;
+    color: rgb(42, 41, 41);
+
+}
+
+.shopmore {
+    margin-bottom: 150px;
 }
