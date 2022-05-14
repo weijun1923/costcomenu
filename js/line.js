@@ -21,17 +21,16 @@ function triggerLIFF() {
             type: 'text',
             text: message
           }
-        ]).then(res => window.alert(res.status))
-          .catch(error => window.alert(error));
+        ]).then(() =>{
           Swal.fire({
             text:'訂單已送出',
             icon:'success'
           }).then((result) => {
             liff.closeWindow();
             localStorage.removeItem('CART');
-           
-
           })
+        })
+          .catch(error => window.alert('無法送出訂單嗎?請用line聊天室回報問題。'));
           
       });
         // 使用者資訊
