@@ -40,7 +40,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top " loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -58,7 +58,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -76,7 +76,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -94,7 +94,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -112,7 +112,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -130,7 +130,7 @@ function renderProdcuts(){
         <div class="col-6  col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -148,7 +148,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -166,7 +166,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -184,7 +184,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -202,7 +202,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -220,7 +220,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
@@ -238,7 +238,7 @@ function renderProdcuts(){
         <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "></a>
+            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
             </div>
             <div class="card-body id="${product.id}"">
                 <h4 class="card-text">${product.name}</h4>
