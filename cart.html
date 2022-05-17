@@ -11,6 +11,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
     <script src="js/products.js"></script>
+    <link rel="stylesheet" href="#" id="css">
+    <style>
+        /* #goMenu{
+            margin-top: 200px;
+        } */
+    </style>
   </head>
   <body> 
 <div class="shopping-bag">
@@ -59,16 +65,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="goMenu">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4 ">
                 <div class="back">
-                    <a href="menu.html">前往購物目錄</a>
+                    <a href="menu.html">點我前往購物目錄</a>
                 </div>
             </div>
         </div>
     </div>
-    <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%;" rows="10"></textarea>
+    <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%; margin-top: 100px;" rows="6"></textarea>
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/line.js"></script>
@@ -78,6 +84,30 @@
                 document.getElementById("reanderlocal").innerHTML = document.getElementById("local").value;
 
         }
+    </script>
+    <script>
+        function changeCss(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","css/EnterPage.css");
+        };
+        function noChangeCss(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","#");
+        };
+            function enterPageDisplay(){
+            let cartList = document.getElementById('shopinglist');
+            let goMenu = document.getElementById('goMenu');
+
+            if (cart.length == 0){
+                changeCss();
+            }else{
+                noChangeCss();
+            }
+        };
+        
+        
+        enterPageDisplay();
+        console.log(enterPageDisplay());
     </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

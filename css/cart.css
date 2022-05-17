@@ -136,7 +136,7 @@
     
 }
 /* 前往購物目錄 */
-.back a{
+ .back a{
     display: block;
     color: black;
     background-color: #f0ba50;
@@ -145,4 +145,4 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-}
+} 
