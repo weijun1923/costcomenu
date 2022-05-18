@@ -2,10 +2,7 @@
 
 
 /* 卡片內容 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-body{
-  font-family: 'Noto Sans TC',sans-serif !important;
-}
+
 .money{
 color: brown;
 font-size: 20px;
@@ -300,4 +297,16 @@ background-color: #212529;
 .offcanvas-title img{
     width: 130px;
     height: auto;
+}
+/* 修正錨點偏移 */
+:target:before { 
+    content: "";
+    display: block;
+    height: 56px;
+    }
+/* 修正錨點速度 */
+body{
+    
+scroll-behavior: auto!important;
+
 }

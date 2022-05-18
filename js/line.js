@@ -28,6 +28,7 @@ function triggerLIFF() {
           }).then((result) => {
             liff.closeWindow();
             localStorage.removeItem('CART');
+            localStorage.removeItem('Stop');
           })
         })
           .catch(error => window.alert('無法送出訂單嗎?請用line聊天室回報問題。'));

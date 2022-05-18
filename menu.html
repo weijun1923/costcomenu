@@ -8,111 +8,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/all.css">
     <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
-    <script>
-        function goToIndex(){
-            if (window.name == ""){
-                window.name = "loaded";
-                Swal.fire({
-                imageUrl: 'img/index07.jpg',
-                imageHeight: 1698,
-                imageWidth: 375,
-                imageAlt: 'A tall image',
-                confirmButtonText:"我同意"
-                })
-            }else{
-                return false;
-            }
-        }
-    </script>
 </head>
 
-<body  onload="goToIndex();getScrollTop();"  >
+<body onload="getScrollTop();">
     <header id="header">
         <nav class="navbar navbar-light fixed-top" style="background-color: white;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="img/word.png" alt="">
                 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/word.png" alt=""></h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="false">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/word.png" alt=""></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="https://liff.line.me/1657102852-g5rdq53W">首頁</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    居家生活
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#render1">女性護理用品</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render2">身體清潔用品</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render3">杯瓶器皿</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render4">保護保養品</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render5">家用清潔</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render6">家庭計畫</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render7">紙巾類</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render8">蚊蟲防治</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    食品
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#render9">乾貨</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#render10">調味料</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    家電
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#render11">電風扇</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    婦幼
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#render12">尿布</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    醫療
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#render13">外用</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://liff.line.me/1657102852-g5rdq53W">首頁</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          居家生活
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#render1">女性護理用品</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render2">身體清潔用品</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render3">杯瓶器皿</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render4">保護保養品</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render5">家用清潔</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render6">家庭計畫</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render7">紙巾類</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render8">蚊蟲防治</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            食品
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#render9">乾貨</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#render10">調味料</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            家電
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#render11">電風扇</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            婦幼
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#render12">尿布</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            醫療
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#render13">外用</a></li>
-                        </ul>
-                      </li>
-                    
-                </ul>
-                
-                </div>
-            </div>
             </div>
         </nav>
     </header>
@@ -161,7 +181,7 @@
             <span class="smtitle" id="render8">蚊蟲防治</span>
         </div>
     </div>
-    
+
     <div class="container-fluid">
         <div class="row render9">
             <span class="title">食品</span>
@@ -191,7 +211,7 @@
     <div class="container-fluid">
         <div class="row render13">
             <span class="title">醫療</span>
-            <span class="smtitle" id="render13">外用</span>
+            <span class="smtitle" id="render13" name="render13">外用</span>
         </div>
     </div>
 
@@ -214,7 +234,7 @@
     <div class="container-fluid" id="shopinglist">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4">
-                <div class="cart cartbox"  id="copythis">
+                <div class="cart cartbox" id="copythis">
                     <div class="cart-header">
                         <div class="column1 text-center">目前已經選購</div>
                     </div>
@@ -230,7 +250,7 @@
                                 <div class="phonetel">電話:<span id="inputTel"></span></div>
                                 <p id="reanderlocal"></p>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="checkout text-center ">
@@ -246,53 +266,83 @@
                         </select>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    
 
-        <script src="js/products.js"> </script>
-        <script src="js/app.js"></script>
-        
-        
-       
-        <script>
-            function getScrollTop(){
+
+    <script src="js/products.js"> </script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+
+    <script>
+        function getScrollTop() {
             var height = localStorage.getItem("Stop");
-            if(height){
-                if(document.documentElement.scrollTop != undefined){
+            if (height) {
+                if (document.documentElement.scrollTop != undefined) {
                     document.documentElement.scrollTop = height;
-                }else{
+                } else {
                     document.scrollTop = height;
                 }
             }
 
+        }
+
+    </script>
+    <script>
+        function myAlert() {
+            var scrollTop = 0;
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scrollTop = document.documentElement.scrollTop;
             }
-            
-        </script>
-        <script>
-            function myAlert(){
-                var scrollTop=0;
-                if(document.documentElement&&document.documentElement.scrollTop)
-                {
-                    scrollTop = document.documentElement.scrollTop;
-                }
-                else if(document.body)
-                {
-                    scrollTop = document.body.scrollTop;
-                }
-                localStorage.setItem("Stop", scrollTop);
+            else if (document.body) {
+                scrollTop = document.body.scrollTop;
             }
-            document.addEventListener('click', myAlert);
-        </script>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
+            localStorage.setItem("Stop", scrollTop);
+        }
+        document.addEventListener('click', myAlert);
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var offcanvasClickClose = $('.offcanvas');
+        function offCanvasHide() {
+            $('.dropdown-menu li a').on('click', function () {
+                // $('.offcanvas').hide();
+                let t1 = 0;
+                let t2 = 0;
+                let timer = null; // 定時器
+
+                // scroll監聽
+                document.onscroll = function () {
+                    clearTimeout(timer);
+                    timer = setTimeout(isScrollEnd, 1000);
+                    t1 = document.documentElement.scrollTop || document.body.scrollTop;
+                }
+
+                function isScrollEnd() {
+                    t2 = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (t2 == t1) {
+                        // $('.offcanvas').show();
+                        $('.btn-close').click();
+                    }
+                }
+            });
+        }
+        document.addEventListener("DOMContentLoaded", offCanvasHide());
+        offCanvasHide();
+        console.log();
+    </script>
 </body>
 
 </html>

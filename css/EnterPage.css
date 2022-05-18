@@ -1,149 +1,48 @@
-.back a {
-    border: 1px solid green;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    -webkit-transform: skewX(-10deg);
-    transform: skewX(-10deg);
-    height: 50px;
+.container input{
+    background-color: rgb(253, 253, 254);
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding:20px;
+    border-radius: 30px;
+    font-size: 20px;
     width: 100%;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    font: 25px sans-serif;
-    font-weight: 300;
-    text-shadow: 0 0 20px #fff;
-    text-transform: uppercase;
-    -webkit-animation: breath2 2s 0.5s infinite alternate;
-    animation: breath2 2s 0.5s infinite alternate;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 200px;
-}
-
-.back a:before {
-    content: "";
-    display: block;
-    width: calc(100% - 22px);
-    height: calc(50px - 8px);
-    -webkit-animation: breath 2s infinite alternate;
-    animation: breath 2s infinite alternate;
-    left: 10px;
-    top: 3px;
-    position: absolute;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 20px;
-}
-
-.back a {
-    border-color: #ffeca8;
-    background-image: linear-gradient(to bottom, rgba(255, 138, 48, 0.6), rgba(240, 96, 29, 0.6));
-    box-shadow: 0 0 70px rgba(255, 138, 48, 0.6), 0 5px 20px rgba(255, 138, 48, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
-    color: #fffcfc;
-}
-
-.back a:before {
-    box-shadow: inset 0 0 30px 0 #ffeca8;
-}
-
-
-
-
-
-.back a:hover {
-    box-shadow: 0 0 70px rgba(255, 138, 48, 0.8), 0 5px 20px rgba(255, 138, 48, 0.8), inset 0 1px #ffeca8, inset 0 -1px #ffeca8;
-}
-
-.back a:hover.fire:before {
-    box-shadow: inset 0 0 50px 0 #ffeca8;
-}
-
-
-
-
-.back a.back a {
-    margin-top: 15px;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-}
-
-@-webkit-keyframes breath {
-    0% {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-
-    100% {
-        -webkit-transform: scaleX(0.95);
-        transform: scaleX(0.95);
-    }
-}
-
-@keyframes breath {
-    0% {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-
-    100% {
-        -webkit-transform: scaleX(0.95);
-        transform: scaleX(0.95);
-    }
-}
-
-@-webkit-keyframes breath2 {
-    0% {
-        -webkit-transform: skewX(-10deg) scaleX(1);
-        transform: skewX(-10deg) scaleX(1);
-    }
-
-    100% {
-        -webkit-transform: skewX(-10deg) scaleX(0.95);
-        transform: skewX(-10deg) scaleX(0.95);
-    }
-}
-
-@keyframes breath2 {
-    0% {
-        -webkit-transform: skewX(-10deg) scaleX(1);
-        transform: skewX(-10deg) scaleX(1);
-    }
-
-    100% {
-        -webkit-transform: skewX(-10deg) scaleX(0.95);
-        transform: skewX(-10deg) scaleX(0.95);
-    }
-}
-
-.ref {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 3px;
-    padding: 5px 8px;
-    position: absolute;
-    font-size: 16px;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-.ref::first-letter {
-    font-size: 12px;
+    
 }
 body{
-    background-color: black;
+    background-image:url(../img/indexbackgroumd.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: auto;
+    position: relative;
+}
+.enterpageagree{
+    color: aliceblue;
+}
+img{
+    display: block;
+}
+.imgwapper{
+    margin: 10px;
+}
+.imgwapper p{
+    line-height: 20px;
+    margin-top: 20px;
+}
+.container h3{
+    line-height: 100px;
+}
+@media screen and (min-width: 768px){
+    body{
+        text-align:center;
+    }
+}
+#shopinglist{
+    display: none;
 }
 .u-full-width{
     display: none;
 }
-#shopinglist{
+#goMenu{
     display: none;
 }
