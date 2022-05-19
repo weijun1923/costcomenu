@@ -305,7 +305,43 @@
         }
         document.addEventListener('click', myAlert);
     </script>
+    <script>
+        function offCanvasHide() {
+            $('.dropdown-menu li a').on('click', function () {
+                $('.offcanvas').css("opacity", "0.5");
+                let t1 = 0;
+                let t2 = 0;
+                let timer = null; // 定時器
+                // scroll監聽
+                document.onscroll = function () {
+                    clearTimeout(timer);
+                    timer = setTimeout(isScrollEnd, 500);
+                    t1 = document.documentElement.scrollTop || document.body.scrollTop;
+                }
 
+                function isScrollEnd() {
+                    t2 = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (t2 == t1) {
+                        $('.btn-close').click();
+                        console.log(t2);
+
+                    }
+                }
+            });
+        }
+
+        function offCanvasshow() {
+            $('.btn-close').on('click', function () {
+                $('.offcanvas').css("opacity", "1");
+            });
+        }
+   
+        document.addEventListener("DOMContentLoaded", offCanvasHide(), offCanvasshow());
+        offCanvasHide();
+        offCanvasshow();
+
+        console.log();
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
@@ -314,35 +350,7 @@
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
 
-    <script>
-        var offcanvasClickClose = $('.offcanvas');
-        function offCanvasHide() {
-            $('.dropdown-menu li a').on('click', function () {
-                // $('.offcanvas').hide();
-                let t1 = 0;
-                let t2 = 0;
-                let timer = null; // 定時器
 
-                // scroll監聽
-                document.onscroll = function () {
-                    clearTimeout(timer);
-                    timer = setTimeout(isScrollEnd, 1000);
-                    t1 = document.documentElement.scrollTop || document.body.scrollTop;
-                }
-
-                function isScrollEnd() {
-                    t2 = document.documentElement.scrollTop || document.body.scrollTop;
-                    if (t2 == t1) {
-                        // $('.offcanvas').show();
-                        $('.btn-close').click();
-                    }
-                }
-            });
-        }
-        document.addEventListener("DOMContentLoaded", offCanvasHide());
-        offCanvasHide();
-        console.log();
-    </script>
 </body>
 
 </html>

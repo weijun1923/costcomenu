@@ -305,8 +305,3 @@ background-color: #212529;
     height: 56px;
     }
 /* 修正錨點速度 */
-body{
-    
-scroll-behavior: auto!important;
-
-}
