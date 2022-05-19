@@ -309,24 +309,9 @@
         function offCanvasHide() {
             $('.dropdown-menu li a').on('click', function () {
                 $('.offcanvas').css("opacity", "0.5");
-                let t1 = 0;
-                let t2 = 0;
-                let timer = null; // 定時器
-                // scroll監聽
-                document.onscroll = function () {
-                    clearTimeout(timer);
-                    timer = setTimeout(isScrollEnd, 500);
-                    t1 = document.documentElement.scrollTop || document.body.scrollTop;
-                }
-
-                function isScrollEnd() {
-                    t2 = document.documentElement.scrollTop || document.body.scrollTop;
-                    if (t2 == t1) {
-                        $('.btn-close').click();
-                        console.log(t2);
-
-                    }
-                }
+                setTimeout(function(){
+                    $('.btn-close').click();
+                },1000)
             });
         }
 
@@ -335,11 +320,10 @@
                 $('.offcanvas').css("opacity", "1");
             });
         }
-   
+
         document.addEventListener("DOMContentLoaded", offCanvasHide(), offCanvasshow());
         offCanvasHide();
         offCanvasshow();
-
         console.log();
     </script>
     <!-- Bootstrap JavaScript Libraries -->
