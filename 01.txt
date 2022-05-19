@@ -25,3 +25,5 @@ index
     setTimeout(window.close,300)
 }
 </script>
+
+https://liff.line.me/1657102852-g5rdq53W

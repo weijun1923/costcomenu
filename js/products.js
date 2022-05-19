@@ -332,6 +332,14 @@ const products = [
       imgSrc: "img/homelife/render7/409381-01.jpg",
       href: "Details/409381.html",
     },
+    {
+      id:189999, // [6]紙巾類 render7
+      name: "Kirkland Signature 科克蘭 三層抽取衛生紙 120張 X 24入",
+      price: 400,
+      instock: 100,
+      imgSrc: "img/homelife/render7/189999-01.jpg",
+      href: "Details/189999.html",
+    },
   ],
   [
     {
