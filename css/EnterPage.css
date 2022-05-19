@@ -9,7 +9,7 @@
     width: 100%;
     
 }
-body{
+.enterpageagree{
     background-image:url(../img/indexbackgroumd.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -46,3 +46,7 @@ img{
 #goMenu{
     display: none;
 }
+video {
+    border: 10px rgb(255, 255, 254) solid;
+}
+
