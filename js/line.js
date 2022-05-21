@@ -3,9 +3,10 @@ window.addEventListener('load', () => {
 
 
 
-var liffID = '1657102852-g5rdq53W';
+
 triggerLIFF();
 function triggerLIFF() {
+  var liffID = '1657102852-g5rdq53W';
     liff.init({
     liffId: liffID
     }).then( () => {
@@ -26,6 +27,7 @@ function triggerLIFF() {
             text:'訂單已送出',
             icon:'success'
           }).then((result) => {
+            liff.logout();
             liff.closeWindow();
             localStorage.removeItem('CART');
             localStorage.removeItem('Stop');
