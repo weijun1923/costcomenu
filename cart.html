@@ -12,12 +12,16 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
     <link rel="stylesheet" href="#" id="css">
 
 </head>
 
 <body>
+    <script>
+        // VConsole 默认会挂载到 `window.VConsole` 上
+        var vConsole = new window.VConsole();
+      </script>
     <div class="shopping-bag">
         <a href="cart.html">
             <i class="fa-solid fa-cart-shopping ">
