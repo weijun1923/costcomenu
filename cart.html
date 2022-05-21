@@ -74,10 +74,11 @@
                 <div class="back">
                     <a href="menu.html">點我前往購物目錄</a>
                 </div>
+                <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%; margin-top: 100px;"rows="6"></textarea>
             </div>
         </div>
     </div>
-
+   
     <div class="container enterpageagree" id="enterpageagree">
         <div class="row">
             <div class="col-12 ">
@@ -121,8 +122,7 @@
                     }
                 </script>
 
-    <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%; margin-top: 100px;"
-        rows="6"></textarea>
+    
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/line.js"></script>
@@ -146,11 +146,12 @@
             let cartList = document.getElementById('shopinglist');
             let goMenu = document.getElementById('goMenu');
             let enterpageagree = document.getElementById('enterpageagree');
+            let textarea = document.getElementById('result-basic');
             if (cart.length == 0) {
                 changeCss();
             } else {
                 noChangeCss();
-                enterpageagree.style.cssText = 'display:none;'
+                enterpageagree.style.cssText = 'display:none;';
             }
         };
 
