@@ -68,8 +68,8 @@
     <div class="container-fluid" id="goMenu">
         <div class="row">
             <div class="col-12 col-md-4 offset-md-4 ">
-                <div class="back">
-                    <a href="menu.html">點我前往購物目錄</a>
+                <div class="back" onclick="windowopen()">
+                    <a href="#">點我前往購物目錄</a>
                 </div>
                 <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這" style="width:100%; margin-top: 100px;"rows="6"></textarea>
             </div>
@@ -111,6 +111,7 @@
                 <br>
                 <script>
                     function windowopen() {
+                        liff.logout();
                         window.open("menu.html");
                     }
                 </script>
@@ -118,7 +119,7 @@
     
     <script src="js/products.js"></script>
     <script src="js/cart.js"></script>
-
+    
     <script>
         function print_value() {
             //   < !--將 select 的值在印出-- >

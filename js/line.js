@@ -27,15 +27,16 @@ function triggerLIFF() {
             text:'訂單已送出',
             icon:'success'
           }).then((result) => {
-            liff.logout();
             liff.closeWindow();
             localStorage.removeItem('CART');
             localStorage.removeItem('Stop');
+            liff.logout();
           })
         })
           .catch(error => window.alert(error),
           window.alert("訂單無法送出!請用line聊天詢問喔。")
           );
+          liff.logout();
       });
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
