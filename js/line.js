@@ -34,7 +34,6 @@ function triggerLIFF() {
           .catch(error => window.alert(error),
           window.alert("訂單無法送出!請用line聊天詢問喔。")
           );
-          
       });
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
