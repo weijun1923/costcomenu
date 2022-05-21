@@ -7,10 +7,12 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
+            liff.logout();
             console.log("start liff api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
                 console.log("btnMessage Click working");
+                
                 let inputValue = document.getElementById("domTextElement").value;
                 document.getElementById("inputTel").innerHTML = inputValue; 
                 const text = document.getElementById('setmessage');
