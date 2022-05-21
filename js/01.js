@@ -11,8 +11,8 @@ window.addEventListener("load",()=>{
             console.log("start liff api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
+                liff.login();
                 console.log("btnMessage Click working");
-                
                 let inputValue = document.getElementById("domTextElement").value;
                 document.getElementById("inputTel").innerHTML = inputValue; 
                 const text = document.getElementById('setmessage');
