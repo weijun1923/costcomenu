@@ -2,7 +2,7 @@ window.addEventListener("load",()=>{
     triggerLIFF();
     function triggerLIFF(){
             // Using a Promise object
-        const liffID = "1657102852-g5rdq53W";
+        const liffID = "1657153949-289wRmb1";
         liff.init({
         liffId: liffID, // Use own liffId
         }).then(() => {
@@ -62,6 +62,6 @@ window.addEventListener("load",()=>{
         });
 
         // Using a callback
-        liff.init({ liffId: "1657102852-g5rdq53W" }, successCallback, errorCallback);
+        liff.init({ liffId: liffID }, successCallback, errorCallback);
     }
 })
