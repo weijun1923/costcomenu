@@ -10,6 +10,7 @@ function triggerLIFF() {
     liff.init({
     liffId: liffID
     }).then( () => {
+
       const btnMessage = document.getElementById('sendMessage');
       btnMessage.addEventListener('click', () => {
         let inputValue = document.getElementById("domTextElement").value;
@@ -30,13 +31,11 @@ function triggerLIFF() {
             liff.closeWindow();
             localStorage.removeItem('CART');
             localStorage.removeItem('Stop');
-            liff.logout();
           })
         })
           .catch(error => window.alert(error),
           window.alert("訂單無法送出!請用line聊天詢問喔。")
           );
-          liff.logout();
       });
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
@@ -50,7 +49,15 @@ function triggerLIFF() {
   
         const outputBasic = document.getElementById('result-basic');
         outputBasic.value = `language: ${language}\nversion: ${version}\nisInClient: ${isInClient}\nisLoggedIn: ${isLoggedIn}\nos: ${os}\nlineVersion: ${lineVersion}`;
-    
+        const btnLogout = document.getElementById('logout');
+        btnLogout.addEventListener('click', () => {
+          // 先確認使用者是否是登入的狀態
+          if(isLoggedIn) {
+            liff.logout();
+            window.location.reload(); // 登出後重整一次頁面
+          }
+        });
+  
     
     }).catch(error => {
         console.log(error);
