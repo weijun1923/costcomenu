@@ -7,19 +7,19 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
-            liff.logout();
             console.log("開始liff Api");
+            var logout = document.getElementById("logout");
+            logout.addEventListener('click',()=>{
+                liff.logout();
+                console.log('登出');
+            })
+            var enterlogout = document.getElementById("closewindow");
+            enterlogout.addEventListener('click',()=>{
+                liff.logout();
+                console.log('登出');
+            })
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
-                if(!liff.isLoggedIn()){
-                    liff.login({
-                        redirectUri: 'https://weijun1923.github.io/costcomenu/cart.html'
-                    });
-                    console.log("執行登入");
-                }else{
-                    console.log("已經登入Line");
-                }
-                if(liff.isLoggedIn()){
                 console.log("btnMessage Click working");
                 let inputValue = document.getElementById("domTextElement").value;
                 document.getElementById("inputTel").innerHTML = inputValue; 
@@ -46,7 +46,6 @@ window.addEventListener("load",()=>{
                     console.log("error", err);
                     window.alert(err + "訂單無法送出，請在line聊天回報問題");
                 });
-                }
             })
             // 使用者資訊
             let language, version, isInClient, isLoggedIn, os, lineVersion;
@@ -60,7 +59,7 @@ window.addEventListener("load",()=>{
     
             const outputBasic = document.getElementById('result-basic');
             outputBasic.value = `language: ${language}\nversion: ${version}\nisInClient: ${isInClient}\nisLoggedIn: ${isLoggedIn}\nos: ${os}\nlineVersion: ${lineVersion}`;
-            const btnLogout = document.getElementById('logout');
+
 
 
 
