@@ -12,6 +12,8 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
+            liff.login();
+            console.log('登入')
             console.log("開始liff Api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
