@@ -1,6 +1,11 @@
 window.addEventListener("load",()=>{
     triggerLIFF();
     function triggerLIFF(){
+        liff.ready.then(() => {
+            // do something you want when liff.init finishes
+            liff.logout();
+            console.log('登出')
+          });
             // Using a Promise object
         const liffID = "1657153949-289wRmb1";
         liff.init({
@@ -8,16 +13,6 @@ window.addEventListener("load",()=>{
         }).then(() => {
         //start useing liff api
             console.log("開始liff Api");
-            var logout = document.getElementById("logout");
-            logout.addEventListener('click',()=>{
-                liff.logout();
-                console.log('登出');
-            })
-            var enterlogout = document.getElementById("closewindow");
-            enterlogout.addEventListener('click',()=>{
-                liff.logout();
-                console.log('登出');
-            })
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
                 console.log("btnMessage Click working");
