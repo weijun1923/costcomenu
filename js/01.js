@@ -12,11 +12,13 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
-            liff.login();
-            console.log('登入')
             console.log("開始liff Api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
+                if( !liff.isLoggedIn()){
+                    liff.login();
+                    console.log('登出');
+                }
                 console.log("btnMessage Click working");
                 let inputValue = document.getElementById("domTextElement").value;
                 document.getElementById("inputTel").innerHTML = inputValue; 
