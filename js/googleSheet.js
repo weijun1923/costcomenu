@@ -24,7 +24,16 @@ function send() {
       },
       success: function(response) {
         if(response == "成功"){
-          alert("成功");
+          Swal.fire({
+            text:'訂單已送出',
+            icon:'success'
+          }).then((result) => {
+            localStorage.removeItem('CART');
+            localStorage.removeItem('Stop');
+            localStorage.setItem("CloseWindow",1)
+            window.location.reload();
+
+          })
         }
       },
     });

@@ -10,9 +10,6 @@ window.addEventListener("load", () => {
             //start useing liff api
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener('click',()=>{
-                liff.closeWindow();
-                localStorage.removeItem('CART');
-                localStorage.removeItem('Stop');
             });
             //取使用者公開資料
                 liff.getProfile().then(profile => {
@@ -23,6 +20,11 @@ window.addEventListener("load", () => {
                     userid.innerHTML = `${profile.userId}`;
                 })
         // 使用者資訊
+                var CloseWindow = localStorage.getItem("CloseWindow");
+                if(CloseWindow == 1){
+                    liff.closeWindow();
+                    localStorage.removeItem("CloseWindow");
+                }
         let language, version, isInClient, isLoggedIn, os, lineVersion;
 
         language = liff.getLanguage(); // String。引用 LIFF SDK 的頁面，頁面中的 lang 值
