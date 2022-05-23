@@ -12,7 +12,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/493a84bc87.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <link rel="stylesheet" href="#" id="css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -20,10 +19,6 @@
 </head>
 
 <body onload="ShowTime()">
-    <script>
-        // VConsole 默认会挂载到 `window.VConsole` 上
-        var vConsole = new window.VConsole();
-    </script>
     <div class="shopping-bag">
         <a href="cart.html">
             <i class="fa-solid fa-cart-shopping ">
@@ -36,7 +31,7 @@
             <div class="col-12 col-md-4 offset-md-4">
                 <div class="cart cartbox" id="copythis">
                     <div class="cart-header">
-                        <span id="showbox"></span>
+                        <span id="showbox" class="showtimebox"></span>
                         <div class="column1 text-center">
                             目前已經選購
                         </div>
@@ -81,8 +76,8 @@
                 </div>
                 <textarea class="u-full-width" id="result-basic" placeholder="結果會顯示在這"
                     style="width:100%; margin-top: 100px;" rows="6"></textarea>
-                <p id="username"></p>
-                <p id="userid"></p>
+                <p id="username" class="username"></p>
+                <p id="userid" class="userid"></p>
             </div>
         </div>
     </div>
