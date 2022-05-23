@@ -9,10 +9,10 @@ function send() {
     let time = document.getElementById('showbox').innerText;
     let getusername = document.getElementById('username').innerText;
     let getuserid = document.getElementById('userid').innerText;
-
+    
     console.log(total);
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbxLgREC_j1td-pTo1Y9DwbNX4Q2onrsqoB0BFGMvcnjCYPD6AErgrfNTWjTJbfoWyaIQA/exec",
+      url: "https://script.google.com/macros/s/AKfycbwmZEuFWBrEjffrCQ1RRavLx7wMfR_L8hndYPqorbfNITcb4IXfuOJQvZITqF2xyHXvqQ/exec",
       data: {
           "name": getusername,
           "shopingcontent": shopingcontent,

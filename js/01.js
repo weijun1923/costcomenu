@@ -6,8 +6,14 @@ window.addEventListener("load", () => {
         liff.init({
             liffId: liffID, // Use own liffId
         }).then(() => {
-            console.log("V5");
+            console.log("V6");
             //start useing liff api
+            const btnMessage = document.getElementById('sendMessage');
+            btnMessage.addEventListener('click',()=>{
+                liff.closeWindow();
+                localStorage.removeItem('CART');
+                localStorage.removeItem('Stop');
+            });
             //取使用者公開資料
                 liff.getProfile().then(profile => {
                     const username = document.getElementById('username');
