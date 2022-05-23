@@ -1,23 +1,23 @@
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
     triggerLIFF();
-    function triggerLIFF(){
-            // Using a Promise object
+    function triggerLIFF() {
+        // Using a Promise object
         const liffID = "1657153949-289wRmb1";
         liff.init({
-        liffId: liffID, // Use own liffId
+            liffId: liffID, // Use own liffId
         }).then(() => {
-        //start useing liff api
-        //取使用者公開資料
-        liff.getProfile().then(function (profile) {
-            const lineuserId = profile.userId;
-            const linename = profile.displayName;
-            const linepictureUrl = profile.pictureUrl;
-            const linestatusMessage = profile.statusMessage;
-        }).catch(function (error) {
-            console.log('error', err);
-        });
-        document.getElementById("userid").innerHTML = lineuserId;
-        document.getElementById("username").innerHTML = lineuserId;
+            console.log("V1");
+            //start useing liff api
+            //取使用者公開資料
+            liff
+                .getProfile()
+                .then((profile) => {
+                    const Linename = profile.displayName;
+                })
+                .catch((err) => {
+                    console.log("error", err);
+                });
+            document.getElementById("userid").innerHTML = Linename;
             // 使用者資訊
             let language, version, isInClient, isLoggedIn, os, lineVersion;
 
@@ -27,7 +27,7 @@ window.addEventListener("load",()=>{
             isLoggedIn = liff.isLoggedIn(); // Boolean。使用者是否登入 LINE 帳號。true 時，可呼叫需要 Access Token 的 API
             os = liff.getOS(); // String。回傳使用者作業系統：ios、android、web
             lineVersion = liff.getLineVersion(); // 使用者的 LINE 版本
-    
+
             const outputBasic = document.getElementById('result-basic');
             outputBasic.value = `language: ${language}\nversion: ${version}\nisInClient: ${isInClient}\nisLoggedIn: ${isLoggedIn}\nos: ${os}\nlineVersion: ${lineVersion}`;
 
@@ -35,10 +35,10 @@ window.addEventListener("load",()=>{
 
 
         })
-        .catch((err) => {
-        // Error happens during initialization
-        console.log(err.code, err.message);
-        });
+            .catch((err) => {
+                // Error happens during initialization
+                console.log(err.code, err.message);
+            });
 
         // Using a callback
         liff.init({ liffId: liffID }, successCallback, errorCallback);

@@ -6,8 +6,7 @@ function send() {
     const text = document.getElementById('setmessage');
     const shopingcontent = text.innerText;
     let userid = document.getElementById('userid').innerText;
-    let username = document.getElementById('username').innerText;
-    let name = userid + username;
+    let name = userid ;
     let location = document.getElementById('reanderlocal').innerText;
     let total = document.getElementById('subtotal').innerText;
     $.ajax({
