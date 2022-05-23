@@ -2,7 +2,6 @@ window.addEventListener("load",()=>{
     triggerLIFF();
     function triggerLIFF(){
             // Using a Promise object
-        console.log("logoutv3");
         const liffID = "1657153949-289wRmb1";
         liff.init({
         liffId: liffID, // Use own liffId
@@ -52,20 +51,7 @@ window.addEventListener("load",()=>{
     
             const outputBasic = document.getElementById('result-basic');
             outputBasic.value = `language: ${language}\nversion: ${version}\nisInClient: ${isInClient}\nisLoggedIn: ${isLoggedIn}\nos: ${os}\nlineVersion: ${lineVersion}`;
-            //只要離開購物車頁面就logout
-            const logout = document.getElementById('logout');
-            logout.addEventListener("click",()=>{
-                liff.logout();
-                liff.closeWindow();
-                console.log("購物頁面登出v2")
-            });
-            const closewindow = document.getElementById('closewindow');
-            closewindow.addEventListener("click",()=>{
-                
-                liff.closeWindow();
-                liff.logout();
-                console.log("教學頁面登出v2")
-            });
+
 
 
 
