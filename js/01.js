@@ -2,12 +2,15 @@ window.addEventListener("load",()=>{
     triggerLIFF();
     function triggerLIFF(){
             // Using a Promise object
+        if (!liff.isLoggedIn()) {
+            liff.login({ redirectUri: "https://weijun1923.github.io/costcomenu/cart.html" });
+            }
+        console.log("logoutv3");
         const liffID = "1657153949-289wRmb1";
         liff.init({
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
-            liff.login();
             console.log("開始liff Api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
@@ -66,7 +69,9 @@ window.addEventListener("load",()=>{
                 liff.logout();
                 console.log("教學頁面登出v2")
             });
-
+            if(liff.closeWindow()){
+                liff.logout();
+            }
 
 
 
