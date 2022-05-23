@@ -7,38 +7,17 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
-            console.log("開始liff Api");
-            const btnMessage = document.getElementById('sendMessage');
-            btnMessage.addEventListener("click",()=>{
-                console.log("btnMessage Click working");
-                let inputValue = document.getElementById("domTextElement").value;
-                document.getElementById("inputTel").innerHTML = inputValue; 
-                const text = document.getElementById('setmessage');
-                const message = text.innerText;
-                liff.sendMessages([
-                    {
-                    type: "text",
-                    text: message,
-                    },
-                ])
-                .then(() => {
-                    console.log("message sent");
-                    Swal.fire({
-                        text:'訂單已送出',
-                        icon:'success'
-                            }).then((result) => {
-                                
-                                liff.closeWindow();
-                                localStorage.removeItem('CART');
-                                localStorage.removeItem('Stop');
-                                liff.logout();
-                            })
-                })
-                .catch((err) => {
-                    console.log("error", err);
-                    window.alert(err + "訂單無法送出，請在line聊天回報問題");
-                });
-            })
+        //取使用者公開資料
+        liff.getProfile().then(function (profile) {
+            const lineuserId = profile.userId;
+            const linename = profile.displayName;
+            const linepictureUrl = profile.pictureUrl;
+            const linestatusMessage = profile.statusMessage;
+        }).catch(function (error) {
+            console.log('error', err);
+        });
+        document.getElementById("userid").innerHTML = lineuserId;
+        document.getElementById("username").innerHTML = lineuserId;
             // 使用者資訊
             let language, version, isInClient, isLoggedIn, os, lineVersion;
 
