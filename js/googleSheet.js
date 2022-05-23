@@ -5,6 +5,7 @@ function send() {
     let phone = document.getElementById("domTextElement").value;
     const text = document.getElementById('setmessage');
     const shopingcontent = text.innerText;
+    const outputContent = document.getElementById('usercontent');
     let name = outputContent.value ;
     let location = document.getElementById('reanderlocal').innerText;
     let total = document.getElementById('subtotal').innerText;
