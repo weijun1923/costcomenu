@@ -2,9 +2,6 @@ window.addEventListener("load",()=>{
     triggerLIFF();
     function triggerLIFF(){
             // Using a Promise object
-        if (!liff.isLoggedIn()) {
-            liff.login({ redirectUri: "https://weijun1923.github.io/costcomenu/cart.html" });
-            }
         console.log("logoutv3");
         const liffID = "1657153949-289wRmb1";
         liff.init({
@@ -69,9 +66,6 @@ window.addEventListener("load",()=>{
                 liff.logout();
                 console.log("教學頁面登出v2")
             });
-            if(liff.closeWindow()){
-                liff.logout();
-            }
 
 
 
