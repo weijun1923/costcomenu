@@ -7,6 +7,7 @@ window.addEventListener("load",()=>{
         liffId: liffID, // Use own liffId
         }).then(() => {
         //start useing liff api
+            liff.login();
             console.log("開始liff Api");
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener("click",()=>{
@@ -27,10 +28,11 @@ window.addEventListener("load",()=>{
                         text:'訂單已送出',
                         icon:'success'
                             }).then((result) => {
-                                liff.logout();
+                                
                                 liff.closeWindow();
                                 localStorage.removeItem('CART');
                                 localStorage.removeItem('Stop');
+                                liff.logout();
                             })
                 })
                 .catch((err) => {
@@ -55,13 +57,14 @@ window.addEventListener("load",()=>{
             logout.addEventListener("click",()=>{
                 liff.logout();
                 liff.closeWindow();
-                console.log("購物頁面登出")
+                console.log("購物頁面登出v2")
             });
             const closewindow = document.getElementById('closewindow');
             closewindow.addEventListener("click",()=>{
-                liff.logout();
+                
                 liff.closeWindow();
-                console.log("教學頁面登出")
+                liff.logout();
+                console.log("教學頁面登出v2")
             });
 
 
