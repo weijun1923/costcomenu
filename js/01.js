@@ -11,7 +11,8 @@ window.addEventListener("load", () => {
             //取使用者公開資料
                 liff.getProfile().then(profile => {
                     const outputContent = document.getElementById('usercontent');
-                    outputContent.value = `${JSON.stringify(profile)}`
+                    let json = `${JSON.stringify(profile)}`;
+                    outputContent.value = `${profile.displayName} + ${profile.userId}`;
                 })
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
