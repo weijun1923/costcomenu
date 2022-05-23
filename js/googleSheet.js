@@ -4,20 +4,20 @@ function send() {
     let phone = document.getElementById("domTextElement").value;
     const text = document.getElementById('setmessage');
     const shopingcontent = text.innerText;
-    const outputContent = document.getElementById('usercontent');
-    let name = outputContent.value ;
     let location = document.getElementById('reanderlocal').innerText;
-
     let total = document.getElementById('subtotal').innerText;
+    let time = document.getElementById('showbox').innerText;
     console.log(total);
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbxoakbL8BDw_2BbNuRuRC6KVgmsy44gr2_6isxW8mvxO_ticpgbTBEfpYthyeTUAumEbA/exec",
+      url: "https://script.google.com/macros/s/AKfycbxLgREC_j1td-pTo1Y9DwbNX4Q2onrsqoB0BFGMvcnjCYPD6AErgrfNTWjTJbfoWyaIQA/exec",
       data: {
-          "name": name,
-          "phone": shopingcontent,
-          "demand": phone,
-          "demand1":location,
-          "demand2":total
+          "name": username,
+          "shopingcontent": shopingcontent,
+          "phone": phone,
+          "location":location,
+          "total":total,
+          "time":time,
+          "userid":userid
       },
       success: function(response) {
         if(response == "成功"){

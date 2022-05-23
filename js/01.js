@@ -6,13 +6,14 @@ window.addEventListener("load", () => {
         liff.init({
             liffId: liffID, // Use own liffId
         }).then(() => {
-            console.log("V3");
+            console.log("V4");
             //start useing liff api
             //取使用者公開資料
                 liff.getProfile().then(profile => {
                     const outputContent = document.getElementById('usercontent');
                     let json = `${JSON.stringify(profile)}`;
-                    outputContent.value = `${profile.displayName} + ${profile.userId}`;
+                    let username = `${profile.displayName}`;
+                    let userid = `${profile.userId}`;
                 })
         // 使用者資訊
         let language, version, isInClient, isLoggedIn, os, lineVersion;
