@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/loading.css">
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -118,6 +119,16 @@
                 <br>
                 <br>
                 <br>
+            </div>
+        </div>
+    </div>
+
+                <!-- loading -->
+                <div class="fixedpage">
+                    <div class="loader"></div>
+                </div>
+
+
                 <script>
                     function windowopen() {
                         window.open("menu.html");
@@ -135,7 +146,7 @@
 
                 <script src="js/products.js"></script>
                 <script src="js/cart.js"></script>
-                <script src="js/01.js"></script>
+                <script src="js/line.js"></script>
                 <script src="js/googleSheet.js"></script>
                 <script>
                     function print_value() {
@@ -165,10 +176,17 @@
                             enterpageagree.style.cssText = 'display:none;';
                         }
                     };
-
-
                     enterPageDisplay();
                     console.log(enterpageagree);
+                </script>
+                <script>
+                    $('.checkout').on('click', function () {
+                        $(".fixedpage").fadeIn();
+                        $(".loader").fadeIn();
+                        $(".fixedpage").delay(1300).fadeOut(1500);
+                        $(".loader").delay(1300).fadeOut(1500);
+                    });
+                    console.log($(".fixedpage"));
                 </script>
                 <!-- Bootstrap JavaScript Libraries -->
                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

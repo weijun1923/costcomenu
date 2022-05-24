@@ -46,4 +46,6 @@ img{
 video {
     border: 10px rgb(255, 255, 254) solid;
 }
-
+.shopping-bag{
+    display: none;
+}
