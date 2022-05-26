@@ -151,12 +151,12 @@
                     }
                 </script>
                 <script>
-                    if ($('#username').text().length == 0){
+                    if (localStorage.getItem("CheckLiffLogin") == 1){
                         $('#lineNameValue').fadeIn();
                     }else{
                         $('#lineNameValue').fadeOut();
                     }
-                    console.log($('#username').text().length);
+                    console.log(localStorage.getItem("CheckLiffLogin"));
                 </script>
                 
                 <script src="js/products.js"></script>

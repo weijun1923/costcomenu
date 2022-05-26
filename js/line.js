@@ -6,11 +6,14 @@ window.addEventListener("load", () => {
         liff.init({
             liffId: liffID, // Use own liffId
         }).then(() => {
-            console.log("V6");
+            console.log("V7");
             if (!liff.isLoggedIn()) {
                 liff.login();
-            }else{
-                console.log("登入失敗");
+                localStorage.setItem("CheckLiffLogin",1);
+                console.log("登入成功")
+            }else if(liff.isLoggedIn()){
+                localStorage.setItem("CheckLiffLogin",1);
+                console.log("登入成功");
             }
             //start useing liff api
             const btnMessage = document.getElementById('sendMessage');

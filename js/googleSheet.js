@@ -9,7 +9,7 @@ function send() {
     let time = document.getElementById('showbox').innerText;
     let getusername = document.getElementById('username').innerText;
     let getuserid = document.getElementById('userid').innerText;
-    if ($('#username').text().length == 0){
+    if (localStorage.getItem("CheckLiffLogin") != 1){
       getusername = $('#lineNameValue').val();
     }
     $.ajax({
