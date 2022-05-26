@@ -7,11 +7,11 @@ window.addEventListener("load", () => {
             liffId: liffID, // Use own liffId
         }).then(() => {
             console.log("V6");
-            // if (!liff.isLoggedIn()) {
-            //     liff.login();
-            // }else{
-            //     console.log("登入失敗");
-            // }
+            if (!liff.isLoggedIn()) {
+                liff.login();
+            }else{
+                console.log("登入失敗");
+            }
             //start useing liff api
             const btnMessage = document.getElementById('sendMessage');
             btnMessage.addEventListener('click', () => {

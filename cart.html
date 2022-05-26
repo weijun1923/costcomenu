@@ -148,7 +148,10 @@
                 <script>
                     if ($('#username').text().length == 0){
                         $('#lineNameValue').fadeIn();
+                    }else{
+                        $('#lineNameValue').fadeOut();
                     }
+                    console.log($('#username').text().length);
                 </script>
                 
                 <script src="js/products.js"></script>
