@@ -31,6 +31,7 @@ function send() {
           }).then((result) => {
             localStorage.removeItem('CART');
             localStorage.removeItem('Stop');
+            localStorage.removeItem('CheckLiffLogin');
             localStorage.setItem("CloseWindow",1)
             window.location.reload();
 
