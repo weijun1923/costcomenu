@@ -9,6 +9,9 @@ function send() {
     let time = document.getElementById('showbox').innerText;
     let getusername = document.getElementById('username').innerText;
     let getuserid = document.getElementById('userid').innerText;
+    if ($('#username').text().length == 0){
+      getusername = $('#lineNameValue').val();
+    }
     $.ajax({
       url: "https://script.google.com/macros/s/AKfycbwmZEuFWBrEjffrCQ1RRavLx7wMfR_L8hndYPqorbfNITcb4IXfuOJQvZITqF2xyHXvqQ/exec",
       data: {

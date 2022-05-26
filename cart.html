@@ -58,8 +58,9 @@
                         </a>
                     </div>
                     <div class="inputel ">
+                        <input type="text" placeholder="輸入line名稱" id="lineNameValue" class="lineNameValue">
                         <input type="text" placeholder="輸入手機號碼" id="domTextElement">
-                        <select id="local" onchange="print_value();">
+                        <select id="local" onchange="print_value();" class="local">
                             <option>請選擇您要領貨的地點</option>
                             <option>東勢區豐勢路137號(南站郵局正對面)</option>
                             <option>東勢區東坑路663巷7號(石角)</option>
@@ -129,7 +130,7 @@
                     <div class="loader"></div>
                 </div>
 
-
+            
                 <script>
                     function windowopen() {
                         window.open("menu.html");
@@ -140,23 +141,30 @@
                         var NowDate = new Date();
                         var d = NowDate.getDay();
                         var dayNames = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
-                        document.getElementById('showbox').innerHTML = '目前時間：' + NowDate.toLocaleString() + '（' + dayNames[d] + '）';
+                        document.getElementById('showbox').innerHTML =  NowDate.toLocaleString() + '（' + dayNames[d] + '）';
                         setTimeout('ShowTime()', 1000);
                     }
                 </script>
-
+                <script>
+                    if ($('#username').text().length == 0){
+                        $('#lineNameValue').fadeIn();
+                    }
+                </script>
+                
                 <script src="js/products.js"></script>
                 <script src="js/cart.js"></script>
                 <script src="js/line.js"></script>
                 <script src="js/googleSheet.js"></script>
+
+
                 <script>
                     function print_value() {
-                        //   < !--將 select 的值在印出-- >
+                        //   < !--將 select 的值在印出 領貨地點-- >
                         document.getElementById("reanderlocal").innerHTML = document.getElementById("local").value;
 
                     }
                 </script>
-                <script>
+                <script>   // 進入畫面轉換
                     function changeCss() {
                         var obj = document.getElementById("css");
                         obj.setAttribute("href", "css/EnterPage.css");
@@ -180,7 +188,7 @@
                     enterPageDisplay();
                     console.log(enterpageagree);
                 </script>
-                <script>
+                <script> //loading畫面
                     $('.checkout').on('click', function () {
                         $(".fixedpage").fadeIn();
                         $(".loader").fadeIn();
