@@ -1,7 +1,7 @@
 const products = [
   [ //[0]女性護理用品 render1
     {
-      id:115671,
+      id: 115671,
       name: "好自在液體衛生棉日用 24公分 36片",
       price: 380,
       instock: 100,
@@ -9,7 +9,7 @@ const products = [
       href: "Details/115671.html",
     },
     {
-      id:115672,
+      id: 115672,
       name: "好自在液體衛生棉量多日用 27公分 32片",
       price: 315,
       instock: 100,
@@ -17,7 +17,7 @@ const products = [
       href: "Details/115672.html",
     },
     {
-      id:291663,
+      id: 291663,
       name: "蘇菲 彈力貼身超薄日用衛生棉 23公分 X 14片 X 9包",
       price: 300,
       instock: 100,
@@ -27,7 +27,7 @@ const products = [
   ],
   [
     {//[1]身體清潔用品 render2
-      id:81001,
+      id: 81001,
       name: "博士倫舒服能日拋隱形眼鏡1.25(120片裝)",
       price: 1630,
       instock: 100,
@@ -35,7 +35,7 @@ const products = [
       href: "Details/81001.html",
     },
     {
-      id:121169,
+      id: 121169,
       name: "舒適防滑輕便刮鬍刀滋潤型26支",
       price: 220,
       instock: 100,
@@ -43,7 +43,7 @@ const products = [
       href: "Details/121169.html",
     },
     {
-      id:133093,
+      id: 133093,
       name: "日本牛乳石鹼蘆薈精華沐浴乳X1入",
       price: 470,
       instock: 100,
@@ -51,7 +51,7 @@ const products = [
       href: "Details/133093.html",
     },
     {
-      id:133673,
+      id: 133673,
       name: "Tom's of Maine 自然亮白牙膏X3入牙刷X2入組合",
       price: 550,
       instock: 100,
@@ -59,7 +59,7 @@ const products = [
       href: "Details/133673.html",
     },
     {
-      id:155405,
+      id: 155405,
       name: "李施德霖 無酒精漱口水 750毫升 X 4入",
       price: 560,
       instock: 100,
@@ -67,7 +67,7 @@ const products = [
       href: "Details/155405.html",
     },
     {
-      id:213980,
+      id: 213980,
       name: "吉列 鋒護手動刮鬍刀組 刀架 X 1 + 刀頭 X 7",
       price: 760,
       instock: 100,
@@ -75,7 +75,7 @@ const products = [
       href: "Details/213980.html",
     },
     {
-      id:213984,
+      id: 213984,
       name: "舒適 Hydro水次元5辨型刮鬍刀組 刀架 X 1 + 刀片 X 7",
       price: 630,
       instock: 100,
@@ -83,7 +83,7 @@ const products = [
       href: "Details/213984.html",
     },
     {
-      id:226672,
+      id: 226672,
       name: "艾瑪絲草本去屑洗髮精X1入",
       price: 675,
       instock: 100,
@@ -91,7 +91,7 @@ const products = [
       href: "Details/226672.html",
     },
     {
-      id:288158,
+      id: 288158,
       name: "保麗淨 假牙基礎清潔108錠 + 潔淨亮白72錠",
       price: 630,
       instock: 100,
@@ -99,7 +99,7 @@ const products = [
       href: "Details/288158.html",
     },
     {
-      id:315153,
+      id: 315153,
       name: "	法國貝膚黛瑪 舒敏高效潔膚液 H2O 850毫升 X 3入",
       price: 1870,
       instock: 100,
@@ -107,7 +107,7 @@ const products = [
       href: "Details/315153.html",
     },
     {
-      id:599899,
+      id: 599899,
       name: "Kirkland Signature 科克蘭漱口水 1.5公升 X 3入",
       price: 360,
       instock: 100,
@@ -115,7 +115,7 @@ const products = [
       href: "Details/599899.html",
     },
     {
-      id:631007,
+      id: 631007,
       name: "Aveeno 燕麥沐浴露 1公升X1入",
       price: 560,
       instock: 100,
@@ -123,7 +123,7 @@ const products = [
       href: "Details/631007.html",
     },
     {
-      id:1251239,
+      id: 1251239,
       name: "Kirkland Signature 科克蘭 卸妝潔面布 180片",
       price: 410,
       instock: 100,
@@ -131,7 +131,7 @@ const products = [
       href: "Details/1251239.html",
     },
     {
-      id:1368233, //id:16
+      id: 1368233, //id:16
       name: "Crest 3D潔白牙膏 158公克 X 5入",
       price: 510,
       instock: 100,
@@ -141,7 +141,7 @@ const products = [
   ],
   [
     { //[2]杯瓶器皿 render3
-      id:126473,
+      id: 126473,
       name: "Lustroware 冷水壺 2.1公升 X 2件組",
       price: 620,
       instock: 100,
@@ -149,7 +149,7 @@ const products = [
       href: "Details/126473.html",
     },
     {
-      id:1564242, //[2]杯瓶器皿 render3
+      id: 1564242, //[2]杯瓶器皿 render3
       name: "Thermoflask 不鏽鋼保冷瓶 1.1公升 X 2件組",
       price: 690,
       instock: 100,
@@ -159,7 +159,7 @@ const products = [
   ],
   [
     {
-      id:92182, //[3] render4 保護保養品
+      id: 92182, //[3] render4 保護保養品
       name: "舒特膚 溫和潔膚乳 591毫升 X 2入",
       price: 630,
       instock: 100,
@@ -167,7 +167,7 @@ const products = [
       href: "Details/92182.html",
     },
     {
-      id:98572,
+      id: 98572,
       name: "Arm & Hammer 小蘇打配方體香膏 4入",
       price: 450,
       instock: 100,
@@ -175,7 +175,7 @@ const products = [
       href: "Details/98572.html",
     },
     {
-      id:123998,
+      id: 123998,
       name: "AHC 玻尿酸植萃保濕機能水 100毫升 X 3入 + 30毫升 X 2入",
       price: 1130,
       instock: 100,
@@ -183,7 +183,7 @@ const products = [
       href: "Details/123998.html",
     },
     {
-      id:126578,
+      id: 126578,
       name: "肌研 極潤多效精華水感凝露180毫升 + 補充包150毫升",
       price: 855,
       instock: 100,
@@ -191,7 +191,7 @@ const products = [
       href: "Details/126578.html",
     },
     {
-      id:130435,
+      id: 130435,
       name: "Labo Labo 毛孔緊緻早晚安面膜 每包 32片 X 2包",
       price: 620,
       instock: 100,
@@ -199,7 +199,7 @@ const products = [
       href: "Details/130435.html",
     },
     {
-      id:130679,
+      id: 130679,
       name: "韓國AHC 超清爽持久 超水感保濕防曬組 防曬棒 22公克 X 2入 + 防曬乳 50毫升 X 1入",
       price: 1000,
       instock: 100,
@@ -207,7 +207,7 @@ const products = [
       href: "Details/130679.html",
     },
     {
-      id:131162,
+      id: 131162,
       name: "Labo Labo 毛孔淨化潔顏乳 120公克 X 2入",
       price: 730,
       instock: 100,
@@ -215,7 +215,7 @@ const products = [
       href: "Details/131162.html",
     },
     {
-      id:132775,
+      id: 132775,
       name: "AHC 瞬效保濕B5玻尿酸精華液組 30毫升 X 2入",
       price: 800,
       instock: 100,
@@ -223,7 +223,7 @@ const products = [
       href: "Details/132775.html",
     },
     {
-      id:134433,
+      id: 134433,
       name: "曼秀雷敦水潤肌柔光透防曬飾底凝露輕舞香氛 80公克 X 2入",
       price: 495,
       instock: 100,
@@ -231,7 +231,7 @@ const products = [
       href: "Details/134433.html",
     },
     {
-      id:191447,
+      id: 191447,
       name: "妮維雅 美白潤膚乳液 600毫升 X 2入",
       price: 645,
       instock: 100,
@@ -239,7 +239,7 @@ const products = [
       href: "Details/191447.html",
     },
     {
-      id:204055,
+      id: 204055,
       name: "舒特膚 防曬凝乳 50毫升 X 2入",
       price: 1010,
       instock: 100,
@@ -247,7 +247,7 @@ const products = [
       href: "Details/204055.html",
     },
     {
-      id:228989,
+      id: 228989,
       name: "巴黎萊雅 金緻護髮精油 玫瑰雪松 100毫升 X 2入",
       price: 730,
       instock: 100,
@@ -255,7 +255,7 @@ const products = [
       href: "Details/228989.html",
     },
     {
-      id:303688,
+      id: 303688,
       name: "香蕉船 淨護系列兒童防曬乳液 SPF 50+ PA++++ 90毫升 X 3入",
       price: 620,
       instock: 100,
@@ -263,7 +263,7 @@ const products = [
       href: "Details/303688.html",
     },
     {
-      id:303689,
+      id: 303689,
       name: "香蕉船淨護系列運動防曬乳x2入",
       price: 680,
       instock: 100,
@@ -271,7 +271,7 @@ const products = [
       href: "Details/303689.html",
     },
     {
-      id:406083,
+      id: 406083,
       name: "肌研 極潤保濕化粧水組 清爽型 400毫升 X 1入 + 保濕型 100毫升 X 2入",
       price: 785,
       instock: 100,
@@ -279,7 +279,7 @@ const products = [
       href: "Details/406083.html",
     },
     {
-      id:570816,
+      id: 570816,
       name: "Aveeno 滋養乳液 591毫升 X 2入",
       price: 520,
       instock: 100,
@@ -287,7 +287,7 @@ const products = [
       href: "Details/570816.html",
     },
     {
-      id:864040, //[3] render4 保護保養品
+      id: 864040, //[3] render4 保護保養品
       name: "Vaseline 進口潤膚乳液組x3入",
       price: 405,
       instock: 100,
@@ -297,7 +297,7 @@ const products = [
   ],
   [
     {
-      id:135512, // [4]家用清潔 render5 
+      id: 135512, // [4]家用清潔 render5 
       name: "Tilley 澳洲經典香氛擴香組 150毫升 X 2入",
       price: 770,
       instock: 100,
@@ -305,7 +305,7 @@ const products = [
       href: "Details/135512.html",
     },
     {
-      id:393577, // [4]家用清潔 render5
+      id: 393577, // [4]家用清潔 render5
       name: "Persil 寶瀅全效能洗衣凝露 4公升/100次用量",
       price: 630,
       instock: 100,
@@ -315,7 +315,7 @@ const products = [
   ],
   [
     {
-      id:95977, // [5]家庭計畫 render6 
+      id: 95977, // [5]家庭計畫 render6 
       name: "durex 杜蕾斯 超薄裝更薄型衛生套 20入 (10入 X 2盒)",
       price: 730,
       instock: 100,
@@ -325,7 +325,7 @@ const products = [
   ],
   [
     {
-      id:409381, // [6]紙巾類 render7
+      id: 409381, // [6]紙巾類 render7
       name: "涼感濕巾組每包20張4包入",
       price: 330,
       instock: 100,
@@ -333,7 +333,7 @@ const products = [
       href: "Details/409381.html",
     },
     {
-      id:189999, // [6]紙巾類 render7
+      id: 189999, // [6]紙巾類 render7
       name: "Kirkland Signature 科克蘭 三層抽取衛生紙 120張 X 24入",
       price: 400,
       instock: 100,
@@ -343,7 +343,7 @@ const products = [
   ],
   [
     {
-      id:131124, // [7]蚊蟲防治 render8
+      id: 131124, // [7]蚊蟲防治 render8
       name: "SAMPO 聲寶 吸入式UV捕蚊燈 2入組 ML-JS07E",
       price: 1780,
       instock: 100,
@@ -353,95 +353,95 @@ const products = [
   ],
   [
     { //食品
-      id:51850, // [8]常備食品、乾貨 render9 
+      id: 51850, // [8]常備食品、乾貨 render9 
       name: "日本進口石丸讚岐細烏龍麵 400公克 X 3入",
       price: 250,
       instock: 100,
       imgSrc: "img/render9/51850-01.jpg",
       href: "Details/51850.html",
     },
-    { 
-      id:56629, 
+    {
+      id: 56629,
       name: "五木細關東麵 416公克 X 9包",
       price: 295,
       instock: 100,
       imgSrc: "img/render9/56629-01.jpg",
       href: "Details/56629.html",
     },
-    { 
-      id:56630, 
+    {
+      id: 56630,
       name: "五木經濟包營養麵 5 公斤4包入",
       price: 260,
       instock: 100,
       imgSrc: "img/render9/56630-01.jpg",
       href: "Details/56630.html",
     },
-    { 
-      id:72056, 
+    {
+      id: 72056,
       name: "韓味不二人蔘雞粥 280公克 X 10入",
       price: 620,
       instock: 100,
       imgSrc: "img/render9/72056-01.jpg",
       href: "Details/72056.html",
     },
-    { 
-      id:86456, 
+    {
+      id: 86456,
       name: "Long Kow 龍口有機冬粉 420 公克 X 2 入",
       price: 310,
       instock: 100,
       imgSrc: "img/render9/86456-01.jpg",
       href: "Details/86456.html",
     },
-    { 
-      id:96387, 
+    {
+      id: 96387,
       name: "得意的一天干貝柴魚粥",
       price: 530,
       instock: 100,
       imgSrc: "img/render9/96387-01.jpg",
       href: "Details/96387.html",
     },
-    { 
-      id:99549, 
+    {
+      id: 99549,
       name: "快煮拉麵65公克36入",
       price: 210,
       instock: 100,
       imgSrc: "img/render9/99549-01.jpg",
       href: "Details/99549.html",
     },
-    { 
-      id:114773, 
+    {
+      id: 114773,
       name: "農心辛拉麵 黑 130公克 X 8包",
       price: 380,
       instock: 100,
       imgSrc: "img/render9/114773-01.jpg",
       href: "Details/114773.html",
     },
-    { 
-      id:116289, 
+    {
+      id: 116289,
       name: "Marutai 九州拉麵三口味組 8入",
       price: 530,
       instock: 100,
       imgSrc: "img/render9/116289-01.jpg",
       href: "Details/116289.html",
     },
-    { 
-      id:126230, 
+    {
+      id: 126230,
       name: "銀川有機米粉 800公克每粒50公克X16粒入",
       price: 380,
       instock: 100,
       imgSrc: "img/render9/126230-01.jpg",
       href: "Details/126230.html",
     },
-    { 
-      id:128085, 
+    {
+      id: 128085,
       name: "老蕭拌麵 椒麻微辣 150公克 X 10包",
       price: 530,
       instock: 100,
       imgSrc: "img/render9/128085-01.jpg",
       href: "Details/128085.html",
     },
-    { 
-      id:133013, 
+    {
+      id: 133013,
       name: "康寶 酸辣味噌湯綜合組 10入",
       price: 310,
       instock: 100,
@@ -449,7 +449,7 @@ const products = [
       href: "Details/133013.html",
     },
     { //[8]常備食品、乾貨 render9 
-      id:210472, 
+      id: 210472,
       name: "不倒翁金螃蟹海鮮風味拉麵 130公克 X 10入",
       price: 430,
       instock: 100,
@@ -459,7 +459,7 @@ const products = [
   ],
   [
     { //[9]調味料 render10 
-      id:73108, 
+      id: 73108,
       name: "日本瀬戶風味芝麻香鬆組295公克/組",
       price: 525,
       instock: 100,
@@ -469,7 +469,7 @@ const products = [
   ],
   [
     { //[10]家電 電風扇 render11
-      id:133802, 
+      id: 133802,
       name: "艾美特 USB手持充電風扇 2入組 (UD802)",
       price: 1010,
       instock: 100,
@@ -479,71 +479,71 @@ const products = [
   ],
   [
     { //[11]婦幼 尿布 render12
-      id:156693, 
+      id: 156693,
       name: "幫寶適一級幫S號日本境内版48公斤228片",
       price: 1325,
       instock: 100,
       imgSrc: "img/render12/156693-01.jpg",
       href: "Details/156693.html",
     },
-    { 
-      id:156694, 
+    {
+      id: 156694,
       name: "幫寶適一級幫紙尿褲 日本境內版 M 號 248 片",
       price: 1800,
       instock: 100,
       imgSrc: "img/render12/156694-01.jpg",
       href: "Details/156694.html",
     },
-    { 
-      id:156695, 
+    {
+      id: 156695,
       name: "幫寶適一級幫紙尿褲 日本境內版 L 號 208 片",
       price: 1805,
       instock: 100,
       imgSrc: "img/render12/156695-01.jpg",
       href: "Details/156695.html",
     },
-    { 
-      id:156696, 
+    {
+      id: 156696,
       name: "幫寶適一級幫紙尿褲 日本境內版 XL 號 152 片",
       price: 1770,
       instock: 100,
       imgSrc: "img/render12/156696-01.jpg",
       href: "Details/156696.html",
     },
-    { 
-      id:196073, 
+    {
+      id: 196073,
       name: "滿意寶寶 瞬潔乾爽紙尿褲 S號 216片",
       price: 990,
       instock: 100,
       imgSrc: "img/render12/196073-01.jpg",
       href: "Details/196073.html",
     },
-    { 
-      id:196074, 
+    {
+      id: 196074,
       name: "滿意寶寶 瞬潔乾爽紙尿褲 M號 222片",
       price: 1190,
       instock: 100,
       imgSrc: "img/render12/196074-01.jpg",
       href: "Details/196074.html",
     },
-    { 
-      id:196076, 
+    {
+      id: 196076,
       name: "滿意寶寶 瞬潔乾爽紙尿褲 XL號 126片",
       price: 960,
       instock: 100,
       imgSrc: "img/render12/196076-01.jpg",
       href: "Details/196076.html",
     },
-    { 
-      id:360476, 
+    {
+      id: 360476,
       name: "幫寶適一級幫拉拉褲 日本境內版 L 號 102 片",
       price: 895,
       instock: 100,
       imgSrc: "img/render12/360476-01.jpg",
       href: "Details/360476.html",
     },
-    { 
-      id:360477, 
+    {
+      id: 360477,
       name: "幫寶適一級幫拉拉褲 日本境內版 XL 號 90 片",
       price: 895,
       instock: 100,
@@ -551,7 +551,7 @@ const products = [
       href: "Details/360477.html",
     },
     { //[11]婦幼 尿布 render12
-      id:360478, 
+      id: 360478,
       name: "幫寶適 一級幫拉拉褲 日本境內版 XXL號 78片",
       price: 1150,
       instock: 100,
@@ -561,23 +561,23 @@ const products = [
   ],
   [
     { //[12]醫療 外用render13
-      id:122125, 
+      id: 122125,
       name: "BAND-AID 水凝膠防水透氣繃 (滅菌) 組合包",
       price: 530,
       instock: 100,
       imgSrc: "img/render13/122125-01.jpg",
       href: "Details/122125.html",
     },
-    { 
-      id:884502, 
+    {
+      id: 884502,
       name: "普拿疼 肌立酸痛藥布 39大片 + 12小片",
       price: 530,
       instock: 100,
       imgSrc: "img/render13/884502-01.jpg",
       href: "Details/884502.html",
     },
-    { 
-      id:884505, 
+    {
+      id: 884505,
       name: "撒隆巴斯® 外用消炎鎮痛貼布 140片",
       price: 520,
       instock: 100,
@@ -587,406 +587,658 @@ const products = [
   ],
   [
     { //[13]食品 零食render14
-      id:119227, 
+      id: 119227,
       name: "萬歲牌 總匯點心包 42公克 X 20包x1盒",
       price: 530,
       instock: 100,
       imgSrc: "img/render14/119227-01.jpg",
       href: "Details/119227.html",
     },
-    { 
-      id:131133, 
+    {
+      id: 131133,
       name: "J.C.'s 綜合堅果脆餅派對桶 800公克x1入",
       price: 370,
       instock: 100,
       imgSrc: "img/render14/131133-02.jpg",
       href: "Details/131133.html",
     },
-    { 
-      id:132365, 
+    {
+      id: 132365,
       name: "萬歲牌 柿米果海苔杏仁小魚 38公克 X 20入X1盒",
       price: 580,
       instock: 100,
       imgSrc: "img/render14/132365-01.jpg",
       href: "Details/132365.html",
     },
-    { 
-      id:999987, 
+    {
+      id: 999987,
       name: "Kirkland Signature 科克蘭 核桃 1.36公斤",
       price: 460,
       instock: 100,
       imgSrc: "img/render14/999987-03.jpg",
       href: "Details/999987.html",
     },
-    { 
-      id:1056107, 
+    {
+      id: 1056107,
       name: "Hoody's 精緻果乾混綜合果仁 907公克",
       price: 470,
       instock: 100,
       imgSrc: "img/render14/1056107-02.jpg",
       href: "Details/1056107.html",
     },
-    { 
-      id:1076903, 
+    {
+      id: 1076903,
       name: "Kirkland Signature 科克蘭 鹽烤開心果核仁 680公克",
       price: 530,
       instock: 100,
       imgSrc: "img/render14/1076903-01.jpg",
       href: "Details/1076903.html",
     },
-    { 
-      id:1512209, 
+    {
+      id: 1512209,
       name: "Kirkland Signature 科克蘭 無調味綜合堅果隨手包 45公克 X 21包",
       price: 580,
       instock: 100,
       imgSrc: "img/render14/1512209-01.jpg",
       href: "Details/1512209.html",
     },
-    { 
-      id:7797464, 
+    {
+      id: 7797464,
       name: "Kirkland Signature 科克蘭 無調味腰果 1.13公斤",
       price: 610,
       instock: 100,
       imgSrc: "img/render14/7797464-01.jpg",
       href: "Details/7797464.html",
     },
-    { 
-      id:9987741, 
+    {
+      id: 9987741,
       name: "Kirkland Signature 科克蘭 無調味綜合堅果 1.13公斤",
       price: 600,
       instock: 100,
       imgSrc: "img/render14/9987741-01.jpg",
       href: "Details/9987741.html",
     },
-    { 
-      id:9999974, 
+    {
+      id: 9999974,
       name: "Kirkland Signature 科克蘭 特選綜合堅果 1.13公斤",
       price: 660,
       instock: 100,
       imgSrc: "img/render14/9999974-01.jpg",
       href: "Details/9999974.html",
     },
-    { 
-      id:122939, 
+    {
+      id: 122939,
       name: "萬歲牌 米果杏仁辣小魚 340公克 X 2罐",
       price: 570,
       instock: 100,
       imgSrc: "img/render14/122939-01.jpg",
       href: "Details/122939.html",
     },
-    { 
-      id:126979, 
+    {
+      id: 126979,
       name: "Kirkland Signature 科克蘭 鹽烤夏威夷果仁 680公克X1入",
       price: 700,
       instock: 100,
       imgSrc: "img/render14/126979-01.jpg",
       href: "Details/126979.html",
     },
-    { 
-      id:132368, 
+    {
+      id: 132368,
       name: "萬歲牌綜合堅果乾優格風味 72公克 X 10入",
       price: 500,
       instock: 100,
       imgSrc: "img/render14/132368-01.jpg",
       href: "Details/132368.html",
     },
-    { 
-      id:995551, 
+    {
+      id: 995551,
       name: "Kirkland Signature 科克蘭 杏仁 1.36公斤",
       price: 415,
       instock: 100,
       imgSrc: "img/render14/995551-01.jpg",
       href: "Details/995551.html",
     },
-    { 
-      id:1067867, 
+    {
+      id: 1067867,
       name: "Kirkland Signature 科克蘭 胡桃 908公克",
       price: 430,
       instock: 100,
       imgSrc: "img/render14/1067867-01.jpg",
       href: "Details/1067867.html",
     },
-    { 
-      id:1390413, 
+    {
+      id: 1390413,
       name: "Kirkland Signature 科克蘭 特選腰果 1.13公斤",
       price: 580,
       instock: 100,
       imgSrc: "img/render14/1390413-01.jpg",
       href: "Details/1390413.html",
     },
-    { 
-      id:1460457, 
+    {
+      id: 1460457,
       name: "Innofoods 有機堅果椰子脆塊 454公克",
       price: 425,
       instock: 100,
       imgSrc: "img/render14/1460457-01.jpg",
       href: "Details/1460457.html",
     },
-    { 
-      id:1490777, 
+    {
+      id: 1490777,
       name: "Kirkland Signature 科克蘭 鹽烤開心果 1.36公斤",
       price: 600,
       instock: 100,
       imgSrc: "img/render14/1490777-01.jpg",
       href: "Details/1490777.html",
     },
-    { 
-      id:1516851, 
+    {
+      id: 1516851,
       name: "Kirkland Signature 科克蘭 鹽烤杏仁 1.13公斤",
       price: 350,
       instock: 100,
       imgSrc: "img/render14/1516851-01.jpg",
       href: "Details/1516851.html",
     },
-    { 
-      id:95816, //新品
+    {
+      id: 95816, //新品
       name: "易口舒 無糖勁爽薄荷錠 33公克 X 8入",
       price: 410,
       instock: 100,
-      imgSrc: "img/render15/95816-01.jpg",
+      imgSrc: "img/render14/95816-01.jpg",
       href: "Details/95816.html",
     },
-    { 
-      id:101557, 
+    {
+      id: 101557,
       name: "益齒達 薄荷無糖口香糖 92.4公克 X 4入",
       price: 330,
       instock: 100,
-      imgSrc: "img/render15/101557-01.jpg",
+      imgSrc: "img/render14/101557-01.jpg",
       href: "Details/101557.html",
     },
-    { 
-      id:104096, 
+    {
+      id: 104096,
       name: "New Choice 纖維椰果凍 2公斤",
       price: 210,
       instock: 100,
-      imgSrc: "img/render15/104096-01.jpg",
+      imgSrc: "img/render14/104096-01.jpg",
       href: "Details/104096.html",
     },
-    { 
-      id:110882, 
+    {
+      id: 110882,
       name: "EXTRA無糖口香糖葡萄口味92.4公克 X 4入",
       price: 330,
       instock: 100,
-      imgSrc: "img/render15/110882-01.jpg",
+      imgSrc: "img/render14/110882-01.jpg",
       href: "Details/110882.html",
     },
-    { 
-      id:121206, 
+    {
+      id: 121206,
       name: "Bigfoot 薄荷岩鹽檸檬糖 900公克",
       price: 290,
       instock: 100,
-      imgSrc: "img/render15/121206-01.jpg",
+      imgSrc: "img/render14/121206-01.jpg",
       href: "Details/121206.html",
     },
-    { 
-      id:123003, 
+    {
+      id: 123003,
       name: "盛香珍葡萄草莓蒟蒻果凍",
       price: 300,
       instock: 100,
-      imgSrc: "img/render15/123003-01.jpg",
+      imgSrc: "img/render14/123003-01.jpg",
       href: "Details/123003.html",
     },
-    { 
-      id:130043, 
+    {
+      id: 130043,
       name: "義美 益生菌果汁 QQ 糖 40公克 X 30入",
       price: 530,
       instock: 100,
-      imgSrc: "img/render15/130043-01.jpg",
+      imgSrc: "img/render14/130043-01.jpg",
       href: "Details/130043.html",
     },
-    { 
-      id:132548, 
+    {
+      id: 132548,
       name: "Cemoi 小熊造型棉花糖牛奶巧克力 2公斤",
       price: 790,
       instock: 100,
-      imgSrc: "img/render15/132548-01.jpg",
+      imgSrc: "img/render14/132548-01.jpg",
       href: "Details/132548.html",
     },
-    { 
-      id:205102, 
+    {
+      id: 205102,
       name: "Galil 熟烤去殼甘栗 100公克 X 10包",
       price: 350,
       instock: 100,
-      imgSrc: "img/render15/205102-01.jpg",
+      imgSrc: "img/render14/205102-01.jpg",
       href: "Details/205102.html",
     },
-    { 
-      id:205303, 
+    {
+      id: 205303,
       name: "哈瑞寶 金熊Q軟糖 1公斤",
       price: 420,
       instock: 100,
-      imgSrc: "img/render15/205303-01.jpg",
+      imgSrc: "img/render14/205303-01.jpg",
       href: "Details/205303.html",
     },
-    { 
-      id:95826, 
+    {
+      id: 95826,
       name: "Airwaves 超涼無糖口香糖 36.4公克 X 11入",
       price: 360,
       instock: 100,
-      imgSrc: "img/render15/95826-01.jpg",
+      imgSrc: "img/render14/95826-01.jpg",
       href: "Details/95826.html",
-    },//[13]食品 零食render14
-  ],
-  [ //render15 新增商品
-    { 
-      id:122939, 
-      name: "萬歲牌 米果杏仁辣小魚 340公克 X 2罐",
-      price: 570,
-      instock: 100,
-      imgSrc: "img/render15/122939-01.jpg",
-      href: "Details/122939.html",
     },
-    { 
-      id:126979, 
-      name: "Kirkland Signature 科克蘭 鹽烤夏威夷果仁 680公克X1入",
-      price: 700,
+    {
+      id: 14384,
+      name: "費列羅 金莎 600公克 3顆X16入",
+      price: 460,
       instock: 100,
-      imgSrc: "img/render15/126979-01.jpg",
-      href: "Details/126979.html",
+      imgSrc: "img/render14/14384-01.jpg",
+      href: "Details/14384.html"
     },
-    { 
-      id:132368, 
-      name: "萬歲牌綜合堅果乾優格風味 72公克 X 10入",
-      price: 500,
+    {
+      id: 63005,
+      name: "士力架 迷你花生巧克力 9公克 X 126條",
+      price: 460,
       instock: 100,
-      imgSrc: "img/render15/132368-01.jpg",
-      href: "Details/132368.html",
+      imgSrc: "img/render14/63005-01.jpg",
+      href: "Details/63005.html"
     },
-    { 
-      id:995551, 
-      name: "Kirkland Signature 科克蘭 杏仁 1.36公斤",
-      price: 415,
+    {
+      id: 68940,
+      name: "健達繽紛樂 43公克 X 18入",
+      price: 370,
       instock: 100,
-      imgSrc: "img/render15/995551-01.jpg",
-      href: "Details/995551.html",
+      imgSrc: "img/render14/68940-01.jpg",
+      href: "Details/68940.html"
     },
-    { 
-      id:1067867, 
-      name: "Kirkland Signature 科克蘭 胡桃 908公克",
-      price: 430,
+    {
+      id: 77915,
+      name: "森永 嗨啾軟糖立體包裝經典綜合水果口味 1公斤",
+      price: 250,
       instock: 100,
-      imgSrc: "img/render15/1067867-01.jpg",
-      href: "Details/1067867.html",
+      imgSrc: "img/render14/77915-01.jpg",
+      href: "Details/77915.html"
     },
-    { 
-      id:1390413, 
-      name: "Kirkland Signature 科克蘭 特選腰果 1.13公斤",
-      price: 580,
-      instock: 100,
-      imgSrc: "img/render15/1390413-01.jpg",
-      href: "Details/1390413.html",
-    },
-    { 
-      id:1460457, 
-      name: "Innofoods 有機堅果椰子脆塊 454公克",
+    {
+      id: 89591,
+      name: "雀巢奇巧 迷你威化巧克力家庭號 16.7公克 X 60條",
       price: 425,
       instock: 100,
-      imgSrc: "img/render15/1460457-01.jpg",
-      href: "Details/1460457.html",
+      imgSrc: "img/render14/89591-01.jpg",
+      href: "Details/89591.html"
     },
-    { 
-      id:1490777, 
-      name: "Kirkland Signature 科克蘭 鹽烤開心果 1.36公斤",
-      price: 600,
-      instock: 100,
-      imgSrc: "img/render15/1490777-01.jpg",
-      href: "Details/1490777.html",
-    },
-    { 
-      id:1516851, 
-      name: "Kirkland Signature 科克蘭 鹽烤杏仁 1.13公斤",
-      price: 350,
-      instock: 100,
-      imgSrc: "img/render15/1516851-01.jpg",
-      href: "Details/1516851.html",
-    },
-    { 
-      id:95816, 
-      name: "易口舒 無糖勁爽薄荷錠 33公克 X 8入",
-      price: 410,
-      instock: 100,
-      imgSrc: "img/render15/95816-01.jpg",
-      href: "Details/95816.html",
-    },
-    { 
-      id:101557, 
-      name: "益齒達 薄荷無糖口香糖 92.4公克 X 4入",
-      price: 330,
-      instock: 100,
-      imgSrc: "img/render15/101557-01.jpg",
-      href: "Details/101557.html",
-    },
-    { 
-      id:104096, 
-      name: "New Choice 纖維椰果凍 2公斤",
-      price: 210,
-      instock: 100,
-      imgSrc: "img/render15/104096-01.jpg",
-      href: "Details/104096.html",
-    },
-    { 
-      id:110882, 
-      name: "EXTRA無糖口香糖葡萄口味92.4公克 X 4入",
-      price: 330,
-      instock: 100,
-      imgSrc: "img/render15/110882-01.jpg",
-      href: "Details/110882.html",
-    },
-    { 
-      id:121206, 
-      name: "Bigfoot 薄荷岩鹽檸檬糖 900公克",
-      price: 290,
-      instock: 100,
-      imgSrc: "img/render15/121206-01.jpg",
-      href: "Details/121206.html",
-    },
-    { 
-      id:123003, 
-      name: "盛香珍葡萄草莓蒟蒻果凍",
-      price: 300,
-      instock: 100,
-      imgSrc: "img/render15/123003-01.jpg",
-      href: "Details/123003.html",
-    },
-    { 
-      id:130043, 
-      name: "義美 益生菌果汁 QQ 糖 40公克 X 30入",
-      price: 530,
-      instock: 100,
-      imgSrc: "img/render15/130043-01.jpg",
-      href: "Details/130043.html",
-    },
-    { 
-      id:132548, 
-      name: "Cemoi 小熊造型棉花糖牛奶巧克力 2公斤",
-      price: 790,
-      instock: 100,
-      imgSrc: "img/render15/132548-01.jpg",
-      href: "Details/132548.html",
-    },
-    { 
-      id:205102, 
-      name: "Galil 熟烤去殼甘栗 100公克 X 10包",
-      price: 350,
-      instock: 100,
-      imgSrc: "img/render15/205102-01.jpg",
-      href: "Details/205102.html",
-    },
-    { 
-      id:205303, 
-      name: "哈瑞寶 金熊Q軟糖 1公斤",
-      price: 420,
-      instock: 100,
-      imgSrc: "img/render15/205303-01.jpg",
-      href: "Details/205303.html",
-    },//新品
-    { 
-      id:95826, 
-      name: "Airwaves 超涼無糖口香糖 36.4公克 X 11入",
+    {
+      id: 95827,
+      name: "Airwaves 極酷嗆涼無糖口香糖 36.4公克 X 11入",
       price: 360,
       instock: 100,
-      imgSrc: "img/render15/95826-01.jpg",
-      href: "Details/95826.html",
-    },//新品
+      imgSrc: "img/render14/95827-01.jpg",
+      href: "Details/95827.html"
+    },
+    {
+      id: 106522,
+      name: "健達 倍多 21公克 X 36條",
+      price: 330,
+      instock: 100,
+      imgSrc: "img/render14/106522-01.jpg",
+      href: "Details/106522.html"
+    },
+    {
+      id: 110333,
+      name: "健達奇趣蛋 20公克 X 12顆",
+      price: 330,
+      instock: 100,
+      imgSrc: "img/render14/110333-01.jpg",
+      href: "Details/110333.html"
+    },
+    {
+      id: 114644,
+      name: "Brown & Haley 巧克力杏仁糖 793公克",
+      price: 450,
+      instock: 100,
+      imgSrc: "img/render14/114644-01.jpg",
+      href: "Details/114644.html"
+    },
+    {
+      id: 121126,
+      name: "櫻桃爺爺 南棗核桃糕 680公克",
+      price: 500,
+      instock: 100,
+      imgSrc: "img/render14/121126-01.jpg",
+      href: "Details/121126.html"
+    },
+    {
+      id: 124372,
+      name: "明治 杏仁可可製品袋裝 1000公克",
+      price: 530,
+      instock: 100,
+      imgSrc: "img/render14/124372-01.jpg",
+      href: "Details/124372.html"
+    },
+    {
+      id: 127998,
+      name: "Dum Dums 綜合口味立袋棒棒糖 1.44公斤",
+      price: 430,
+      instock: 100,
+      imgSrc: "img/render14/127998-01.jpg",
+      href: "Details/127998.html"
+    },
+    {
+      id: 132906,
+      name: "St.Michel 法國奶油巧克力餅乾 1.08公斤",
+      price: 410,
+      instock: 100,
+      imgSrc: "img/render14/132906-01.jpg",
+      href: "Details/132906.html"
+    },
+    {
+      id: 133667,
+      name: "Cemoi 82% 黑巧克力 100公克 X 6入",
+      price: 280,
+      instock: 100,
+      imgSrc: "img/render14/133667-01.jpg",
+      href: "Details/133667.html"
+    },
+    {
+      id: 600550,
+      name: "Hershey's Nuggets 綜合巧克力 1.47公斤",
+      price: 495,
+      instock: 100,
+      imgSrc: "img/render14/600550-01.jpg",
+      href: "Details/600550.html"
+    },
+    {
+      id: 959987,
+      name: "Kirkland Signature 科克蘭 葡萄乾巧克力 1.53公斤",
+      price: 460,
+      instock: 100,
+      imgSrc: "img/render14/959987-01.jpg",
+      href: "Details/959987.html"
+    },
+    {
+      id: 995550,
+      name: "Kirkland Signature 科克蘭 杏仁巧克力 1.36公斤",
+      price: 470,
+      instock: 100,
+      imgSrc: "img/render14/995550-01.jpg",
+      href: "Details/995550.html"
+    },
+    {
+      id: 999984,
+      name: "Kirkland Signature 科克蘭 袋裝綜合巧克力 2.55公斤",
+      price: 670,
+      instock: 100,
+      imgSrc: "img/render14/999984-01.jpg",
+      href: "Details/999984.html"
+    },
+    {
+      id: 1199868,
+      name: "M&M's 牛奶糖衣巧克力罐裝 1757.7公克",
+      price: 500,
+      instock: 100,
+      imgSrc: "img/render14/1199868-01.jpg",
+      href: "Details/1199868.html"
+    },
+    {
+      id: 1361170,
+      name: "That's it. 迷你水果條綜合包 24入",
+      price: 580,
+      instock: 100,
+      imgSrc: "img/render14/1361170-02.jpg",
+      href: "Details/1361170.html"
+    },//[13]食品 零食render14
+  ],
+  [ // [14]render15 新增商品
+    { //新品
+      id: 14384,
+      name: "費列羅 金莎 600公克 3顆X16入",
+      price: 460,
+      instock: 100,
+      imgSrc: "img/render15/14384-01.jpg",
+      href: "Details/14384.html"
+    },
+    {
+      id: 63005,
+      name: "士力架 迷你花生巧克力 9公克 X 126條",
+      price: 460,
+      instock: 100,
+      imgSrc: "img/render15/63005-01.jpg",
+      href: "Details/63005.html"
+    },
+    {
+      id: 68940,
+      name: "健達繽紛樂 43公克 X 18入",
+      price: 370,
+      instock: 100,
+      imgSrc: "img/render15/68940-01.jpg",
+      href: "Details/68940.html"
+    },
+    {
+      id: 77915,
+      name: "森永 嗨啾軟糖立體包裝經典綜合水果口味 1公斤",
+      price: 250,
+      instock: 100,
+      imgSrc: "img/render15/77915-01.jpg",
+      href: "Details/77915.html"
+    },
+    {
+      id: 89591,
+      name: "雀巢奇巧 迷你威化巧克力家庭號 16.7公克 X 60條",
+      price: 425,
+      instock: 100,
+      imgSrc: "img/render15/89591-01.jpg",
+      href: "Details/89591.html"
+    },
+    {
+      id: 95827,
+      name: "Airwaves 極酷嗆涼無糖口香糖 36.4公克 X 11入",
+      price: 360,
+      instock: 100,
+      imgSrc: "img/render15/95827-01.jpg",
+      href: "Details/95827.html"
+    },
+    {
+      id: 106522,
+      name: "健達 倍多 21公克 X 36條",
+      price: 330,
+      instock: 100,
+      imgSrc: "img/render15/106522-01.jpg",
+      href: "Details/106522.html"
+    },
+    {
+      id: 110333,
+      name: "健達奇趣蛋 20公克 X 12顆",
+      price: 330,
+      instock: 100,
+      imgSrc: "img/render15/110333-01.jpg",
+      href: "Details/110333.html"
+    },
+    {
+      id: 114644,
+      name: "Brown & Haley 巧克力杏仁糖 793公克",
+      price: 450,
+      instock: 100,
+      imgSrc: "img/render15/114644-01.jpg",
+      href: "Details/114644.html"
+    },
+    {
+      id: 121126,
+      name: "櫻桃爺爺 南棗核桃糕 680公克",
+      price: 500,
+      instock: 100,
+      imgSrc: "img/render15/121126-01.jpg",
+      href: "Details/121126.html"
+    },
+    {
+      id: 124372,
+      name: "明治 杏仁可可製品袋裝 1000公克",
+      price: 530,
+      instock: 100,
+      imgSrc: "img/render15/124372-01.jpg",
+      href: "Details/124372.html"
+    },
+    {
+      id: 127998,
+      name: "Dum Dums 綜合口味立袋棒棒糖 1.44公斤",
+      price: 430,
+      instock: 100,
+      imgSrc: "img/render15/127998-01.jpg",
+      href: "Details/127998.html"
+    },
+    {
+      id: 132906,
+      name: "St.Michel 法國奶油巧克力餅乾 1.08公斤",
+      price: 410,
+      instock: 100,
+      imgSrc: "img/render15/132906-01.jpg",
+      href: "Details/132906.html"
+    },
+    {
+      id: 133667,
+      name: "Cemoi 82% 黑巧克力 100公克 X 6入",
+      price: 280,
+      instock: 100,
+      imgSrc: "img/render15/133667-01.jpg",
+      href: "Details/133667.html"
+    },
+    {
+      id: 600550,
+      name: "Hershey's Nuggets 綜合巧克力 1.47公斤",
+      price: 495,
+      instock: 100,
+      imgSrc: "img/render15/600550-01.jpg",
+      href: "Details/600550.html"
+    },
+    {
+      id: 959987,
+      name: "Kirkland Signature 科克蘭 葡萄乾巧克力 1.53公斤",
+      price: 460,
+      instock: 100,
+      imgSrc: "img/render15/959987-01.jpg",
+      href: "Details/959987.html"
+    },
+    {
+      id: 995550,
+      name: "Kirkland Signature 科克蘭 杏仁巧克力 1.36公斤",
+      price: 470,
+      instock: 100,
+      imgSrc: "img/render15/995550-01.jpg",
+      href: "Details/995550.html"
+    },
+    {
+      id: 999984,
+      name: "Kirkland Signature 科克蘭 袋裝綜合巧克力 2.55公斤",
+      price: 670,
+      instock: 100,
+      imgSrc: "img/render15/999984-01.jpg",
+      href: "Details/999984.html"
+    },
+    {
+      id: 1199868,
+      name: "M&M's 牛奶糖衣巧克力罐裝 1757.7公克",
+      price: 500,
+      instock: 100,
+      imgSrc: "img/render15/1199868-01.jpg",
+      href: "Details/1199868.html"
+    },
+    {
+      id: 1361170,
+      name: "That's it. 迷你水果條綜合包 24入",
+      price: 580,
+      instock: 100,
+      imgSrc: "img/render15/1361170-02.jpg",
+      href: "Details/1361170.html"
+    },
+    {
+      id: 100493,
+      name: "白蘭氏雙認證鷄精 68毫升 X 30入 + 41毫升 X 2入",
+      price: 1335,
+      instock: 100,
+      imgSrc: "img/render15/100493-01.jpg",
+      href: "Details/100493.html"
+    },
+    {
+      id: 103719,
+      name: "天地合補 龜鹿雙寶飲 68毫升 X 30入",
+      price: 1550,
+      instock: 100,
+      imgSrc: "img/render15/103719-01.jpg",
+      href: "Details/103719.html"
+    },
+    {
+      id: 103722,
+      name: "白蘭氏 旭沛蜆精 60毫升 X 20瓶",
+      price: 950,
+      instock: 100,
+      imgSrc: "img/render15/103722-01.jpg",
+      href: "Details/103722.html"
+    },
+    {
+      id: 128443,
+      name: "桂格 5X參蔘濃縮精華飲 15毫升 X 34入",
+      price: 1750,
+      instock: 100,
+      imgSrc: "img/render15/128443-01.jpg",
+      href: "Details/128443.html"
+    },
+    {
+      id: 142408,
+      name: "桂格 養氣人蔘 60毫升 X 31入",
+      price: 1450,
+      instock: 100,
+      imgSrc: "img/render15/142408-01.jpg",
+      href: "Details/142408.html"
+    }//[14]render15 新增商品
+  ],
+  [
+    { // [15]render16 醫療 保健食品
+      id: 100493,
+      name: "白蘭氏雙認證鷄精 68毫升 X 30入 + 41毫升 X 2入",
+      price: 1335,
+      instock: 100,
+      imgSrc: "img/render16/100493-01.jpg",
+      href: "Details/100493.html"
+    },
+    {
+      id: 103719,
+      name: "天地合補 龜鹿雙寶飲 68毫升 X 30入",
+      price: 1550,
+      instock: 100,
+      imgSrc: "img/render16/103719-01.jpg",
+      href: "Details/103719.html"
+    },
+    {
+      id: 103722,
+      name: "白蘭氏 旭沛蜆精 60毫升 X 20瓶",
+      price: 950,
+      instock: 100,
+      imgSrc: "img/render16/103722-01.jpg",
+      href: "Details/103722.html"
+    },
+    {
+      id: 128443,
+      name: "桂格 5X參蔘濃縮精華飲 15毫升 X 34入",
+      price: 1750,
+      instock: 100,
+      imgSrc: "img/render16/128443-01.jpg",
+      href: "Details/128443.html"
+    },
+    { // [15]render16 醫療 保健食品
+      id: 142408,
+      name: "桂格 養氣人蔘 60毫升 X 31入",
+      price: 1450,
+      instock: 100,
+      imgSrc: "img/render16/142408-01.jpg",
+      href: "Details/142408.html"
+    },
+  ],
+  [ //[16]render17端午限定
+    {
+      id: 114565,
+      name: "晶華 冷凍燒肉粽 200公克 X 5入(生鮮食品購買要先付款)",
+      price: 600,
+      instock: 100,
+      imgSrc: "img/render17/114565-03.jpg",
+      href: "Details/114565.html"
+    },
   ]
 ];
