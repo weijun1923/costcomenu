@@ -309,7 +309,7 @@
 
     <script>
         function getScrollTop() {
-            var height = localStorage.getItem("Stop");
+            var height = sessionStorage.getItem("Stop");
             if (height) {
                 if (document.documentElement.scrollTop != undefined) {
                     document.documentElement.scrollTop = height;
@@ -330,7 +330,7 @@
             else if (document.body) {
                 scrollTop = document.body.scrollTop;
             }
-            localStorage.setItem("Stop", scrollTop);
+            sessionStorage.setItem("Stop", scrollTop);
         }
         document.addEventListener('click', myAlert);
     </script>

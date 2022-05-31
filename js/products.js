@@ -951,7 +951,7 @@ const products = [
       name: "Kirkland Signature 科克蘭 葡萄乾巧克力 1.53公斤",
       price: 460,
       instock: 100,
-      imgSrc: "img/render14/959987-01.jpg",
+      imgSrc: "img/render14/959987-02.jpg",
       href: "Details/959987.html"
     },
     {
@@ -1001,7 +1001,7 @@ const products = [
       name: "士力架 迷你花生巧克力 9公克 X 126條",
       price: 460,
       instock: 100,
-      imgSrc: "img/render15/63005-01.jpg",
+      imgSrc: "img/render15/63005-02.jpg",
       href: "Details/63005.html"
     },
     {
@@ -1113,7 +1113,7 @@ const products = [
       name: "Kirkland Signature 科克蘭 葡萄乾巧克力 1.53公斤",
       price: 460,
       instock: 100,
-      imgSrc: "img/render15/959987-01.jpg",
+      imgSrc: "img/render15/959987-02.jpg",
       href: "Details/959987.html"
     },
     {
