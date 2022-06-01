@@ -988,205 +988,77 @@ const products = [
     },//[13]食品 零食render14
   ],
   [ // [14]render15 新增商品
-    { //新品
-      id: 14384,
-      name: "費列羅 金莎 600公克 3顆X16入",
-      price: 460,
+    {
+      id: 95452,
+      name: "Mon Petit 貓倍麗 貓罐頭三種口味 80公克 X 24入",
+      price: 640,
       instock: 100,
-      imgSrc: "img/render15/14384-01.jpg",
-      href: "Details/14384.html"
+      imgSrc: "img/render15/95452-01.jpg",
+      href: "Details/95452.html"
     },
     {
-      id: 63005,
-      name: "士力架 迷你花生巧克力 9公克 X 126條",
-      price: 460,
+      id: 72030,
+      name: "GOURMET 貓罐頭雞/牛肉 185克24罐",
+      price: 650,
       instock: 100,
-      imgSrc: "img/render15/63005-02.jpg",
-      href: "Details/63005.html"
+      imgSrc: "img/render15/72030-01.jpg",
+      href: "Details/72030.html"
     },
     {
-      id: 68940,
-      name: "健達繽紛樂 43公克 X 18入",
-      price: 370,
+      id: 127226,
+      name: "AIXIA 愛喜雅 水煮黑缶貓主食軟包 70公克 X 24入",
+      price: 550,
       instock: 100,
-      imgSrc: "img/render15/68940-01.jpg",
-      href: "Details/68940.html"
+      imgSrc: "img/render15/127226-01.jpg",
+      href: "Details/127226.html"
     },
     {
-      id: 77915,
-      name: "森永 嗨啾軟糖立體包裝經典綜合水果口味 1公斤",
-      price: 250,
+      id: 131338,
+      name: "Vitakraft 貓快餐肉條雙口味 6公克 X 84入",
+      price: 750,
       instock: 100,
-      imgSrc: "img/render15/77915-01.jpg",
-      href: "Details/77915.html"
+      imgSrc: "img/render15/131338-01.jpg",
+      href: "Details/131338.html"
     },
     {
-      id: 89591,
-      name: "雀巢奇巧 迷你威化巧克力家庭號 16.7公克 X 60條",
-      price: 425,
+      id: 996064,
+      name: "MeridLife 樂益活 寵物綜合維他命 + 葡萄糖胺 + 軟骨素配方 犬貓專用 700公克",
+      price: 1100,
       instock: 100,
-      imgSrc: "img/render15/89591-01.jpg",
-      href: "Details/89591.html"
+      imgSrc: "img/render15/996064-01.jpg",
+      href: "Details/996064.html"
     },
     {
-      id: 95827,
-      name: "Airwaves 極酷嗆涼無糖口香糖 36.4公克 X 11入",
-      price: 360,
-      instock: 100,
-      imgSrc: "img/render15/95827-01.jpg",
-      href: "Details/95827.html"
-    },
-    {
-      id: 106522,
-      name: "健達 倍多 21公克 X 36條",
-      price: 330,
-      instock: 100,
-      imgSrc: "img/render15/106522-01.jpg",
-      href: "Details/106522.html"
-    },
-    {
-      id: 110333,
-      name: "健達奇趣蛋 20公克 X 12顆",
-      price: 330,
-      instock: 100,
-      imgSrc: "img/render15/110333-01.jpg",
-      href: "Details/110333.html"
-    },
-    {
-      id: 114644,
-      name: "Brown & Haley 巧克力杏仁糖 793公克",
-      price: 450,
-      instock: 100,
-      imgSrc: "img/render15/114644-01.jpg",
-      href: "Details/114644.html"
-    },
-    {
-      id: 121126,
-      name: "櫻桃爺爺 南棗核桃糕 680公克",
-      price: 500,
-      instock: 100,
-      imgSrc: "img/render15/121126-01.jpg",
-      href: "Details/121126.html"
-    },
-    {
-      id: 124372,
-      name: "明治 杏仁可可製品袋裝 1000公克",
-      price: 530,
-      instock: 100,
-      imgSrc: "img/render15/124372-01.jpg",
-      href: "Details/124372.html"
-    },
-    {
-      id: 127998,
-      name: "Dum Dums 綜合口味立袋棒棒糖 1.44公斤",
-      price: 430,
-      instock: 100,
-      imgSrc: "img/render15/127998-01.jpg",
-      href: "Details/127998.html"
-    },
-    {
-      id: 132906,
-      name: "St.Michel 法國奶油巧克力餅乾 1.08公斤",
+      id: 1244567,
+      name: "Simply Purrfect 小蘇打粉除臭貓砂 15.9公斤",
       price: 410,
       instock: 100,
-      imgSrc: "img/render15/132906-01.jpg",
-      href: "Details/132906.html"
+      imgSrc: "img/render15/1244567-01.jpg",
+      href: "Details/1244567.html"
     },
     {
-      id: 133667,
-      name: "Cemoi 82% 黑巧克力 100公克 X 6入",
-      price: 280,
+      id: 1790216,
+      name: "ARM & HAMMER 加強除臭貓砂 18.14公斤",
+      price: 450,
       instock: 100,
-      imgSrc: "img/render15/133667-01.jpg",
-      href: "Details/133667.html"
+      imgSrc: "img/render15/1790216-01.jpg",
+      href: "Details/1790216.html"
     },
     {
-      id: 600550,
-      name: "Hershey's Nuggets 綜合巧克力 1.47公斤",
-      price: 495,
-      instock: 100,
-      imgSrc: "img/render15/600550-01.jpg",
-      href: "Details/600550.html"
+      id: 126098,
+      name: "Cat Chow 貓乾糧完整均衡配方 6.8公斤(限購一包)",
+      price: 750,
+      instock: 1,
+      imgSrc: "img/render15/126098-01.jpg",
+      href: "Details/126098.html"
     },
     {
-      id: 959987,
-      name: "Kirkland Signature 科克蘭 葡萄乾巧克力 1.53公斤",
-      price: 460,
+      id: 117068,
+      name: "Mon Petit 貓倍麗 小鮮肉泥 綜合口味 10公克 X 80入",
+      price: 730,
       instock: 100,
-      imgSrc: "img/render15/959987-02.jpg",
-      href: "Details/959987.html"
-    },
-    {
-      id: 995550,
-      name: "Kirkland Signature 科克蘭 杏仁巧克力 1.36公斤",
-      price: 470,
-      instock: 100,
-      imgSrc: "img/render15/995550-01.jpg",
-      href: "Details/995550.html"
-    },
-    {
-      id: 999984,
-      name: "Kirkland Signature 科克蘭 袋裝綜合巧克力 2.55公斤",
-      price: 670,
-      instock: 100,
-      imgSrc: "img/render15/999984-01.jpg",
-      href: "Details/999984.html"
-    },
-    {
-      id: 1199868,
-      name: "M&M's 牛奶糖衣巧克力罐裝 1757.7公克",
-      price: 500,
-      instock: 100,
-      imgSrc: "img/render15/1199868-01.jpg",
-      href: "Details/1199868.html"
-    },
-    {
-      id: 1361170,
-      name: "That's it. 迷你水果條綜合包 24入",
-      price: 580,
-      instock: 100,
-      imgSrc: "img/render15/1361170-02.jpg",
-      href: "Details/1361170.html"
-    },
-    {
-      id: 100493,
-      name: "白蘭氏雙認證鷄精 68毫升 X 30入 + 41毫升 X 2入",
-      price: 1335,
-      instock: 100,
-      imgSrc: "img/render15/100493-01.jpg",
-      href: "Details/100493.html"
-    },
-    {
-      id: 103719,
-      name: "天地合補 龜鹿雙寶飲 68毫升 X 30入",
-      price: 1550,
-      instock: 100,
-      imgSrc: "img/render15/103719-01.jpg",
-      href: "Details/103719.html"
-    },
-    {
-      id: 103722,
-      name: "白蘭氏 旭沛蜆精 60毫升 X 20瓶",
-      price: 950,
-      instock: 100,
-      imgSrc: "img/render15/103722-01.jpg",
-      href: "Details/103722.html"
-    },
-    {
-      id: 128443,
-      name: "桂格 5X參蔘濃縮精華飲 15毫升 X 34入",
-      price: 1750,
-      instock: 100,
-      imgSrc: "img/render15/128443-01.jpg",
-      href: "Details/128443.html"
-    },
-    {
-      id: 142408,
-      name: "桂格 養氣人蔘 60毫升 X 31入",
-      price: 1450,
-      instock: 100,
-      imgSrc: "img/render15/142408-01.jpg",
-      href: "Details/142408.html"
+      imgSrc: "img/render15/117068-01.jpg",
+      href: "Details/117068.html"
     }//[14]render15 新增商品
   ],
   [
