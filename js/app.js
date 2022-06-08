@@ -310,27 +310,9 @@ function renderProdcuts(){
         </div>
     </div>`;
     })
-    products[16].forEach( (product) => {
-        productsE17.innerHTML +=`
-        <div class="col-12 col-md-3 text-center  m-0 p-0">
-        <div class="card h-100" >
-            <div class="imgwapper">
-            <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
-            </div>
-            <div class="card-body id="${product.id}"">
-                <h4 class="card-text">${product.name}</h4>
-                <p class="money">$${product.price}</p>
-                <input type="button" value="詳細內容" onclick="location.href='${product.href}'" class="bottonhadow">
-            </div>
-            <div class="add-to-cart" onclick="addToCart(${product.id})">
-            <button type="button" class="bottonshadow">加入購物車</button>
-            </div>
-        </div>
-    </div>`;
-    })
     products[17].forEach( (product) => {
         productsE18.innerHTML +=`
-        <div class="col-12 col-md-3 text-center  m-0 p-0">
+        <div class="col-6 col-md-3 text-center  m-0 p-0">
         <div class="card h-100" >
             <div class="imgwapper">
             <a href="${product.href}"><img src="${product.imgSrc}"class="card-img-top "loading="lazy"></a>
